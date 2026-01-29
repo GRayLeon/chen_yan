@@ -1,0 +1,69 @@
+.partnerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1366px;
+  padding: 120px 80px;
+  background-image: url('../images/partner_bg.png');
+  background-size: cover;
+  background-position: center;
+  .head {
+    h2 {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      font-size: 32px;
+      color: #46ac82;
+      span {
+        font-style: italic;
+      }
+    }
+  }
+  .partnerSlide {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px 0;
+    &List {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 48px;
+      width: 100%;
+    }
+    &Area {
+      width: calc( 50% - 24px );
+    }
+    &__title {
+      padding: 16px 0;
+      border-bottom: #666666 1px solid;
+    }
+    &__item {
+      position: relative;
+      .bg {
+        width: 164px;
+        height: 184px;
+        mask-image: url('../images/card_shape.svg');
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+      }
+      .icon {
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        width: 48px;
+        height: 48px;
+        padding: 8px;
+        border-radius: 48px;
+        background-color: white;
+        transform: translateX(-24px);
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}

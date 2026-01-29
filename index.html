@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header light">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="indexBanner">
+        <h1>Together,</h1>
+        <h2>We Sparkle the Future.</h2>
+      </div>
+      <div class="indexAbout">
+        <div class="indexAbout__stickyArea">
+          <div class="wrapper">
+            <div class="indexAbout__title">
+              <div class="head">
+                <h2>關於我們</h2>
+              </div>
+            </div>
+            <div class="indexAbout__content">
+              <div class="indexAbout__content__item active">
+                <div class="text">
+                  <p>
+                    辰妍國際以「協作 × 共融 × 創意 × 延續」為核心理念，深耕影像產業多年，從攝影出發， 逐步建立多個專業品牌版圖，涵蓋新生兒、孕婦、兒童、家庭與寵物等領域，並持續從影像 服務延伸至生活消費型態，打造完整的家庭體驗生態圈。
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="./images/index_about_light_01.png" alt="">
+                  <div class="number">
+                    <div class="current">01</div>
+                    <div class="slash">/</div>
+                    <div class="total">03</div>
+                  </div>
+                </div>
+              </div>
+              <div class="indexAbout__content__item">
+                <div class="text">
+                  <p></p>
+                  <p></p>
+                </div>
+                <img src="./images/index_about_light_01.png" alt="">
+                <div class="number">
+                  <div class="current"></div>
+                  <div class="total"></div>
+                </div>
+              </div>
+              <div class="indexAbout__content__item">
+                <div class="text">
+                  <p></p>
+                  <ul class="sumList">
+                    <li>
+                      <div class="number">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div></div>
+                    </li>
+                    <li>
+                      <div class="number">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div></div>
+                    </li>
+                    <li>
+                      <div class="number">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div></div>
+                    </li>
+                    <li>
+                      <div class="number">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div></div>
+                    </li>
+                  </ul>
+                </div>
+                <img src="./images/index_about_light_01.png" alt="">
+                <div class="number">
+                  <div class="current"></div>
+                  <div class="total"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexSupply">
+        <div class="indexSupply__stickyArea">
+          <div class="wrapper">
+            <div class="indexSupply__title">
+              <div class="head">
+                <h2>我們</h2>
+                <h2 class="italic">能提供</h2>
+              </div>
+              <div class="button">
+                <div class="text">
+                  LEARN MORE<br />
+                  ABOUT SERVICE
+                </div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </div>
+            <div class="indexSupply__cardArea">
+              <div class="indexSupply__cardArea__card">
+                <img src="./images/folder_05.png" alt="">
+                <div class="text">
+                  <div class="head">
+                    <div class="number">05</div>
+                    <div class="title">合作支持機制</div>
+                  </div>
+                  <div class="detail">
+                    <ul>
+                      <li>
+                        <h3>專屬顧問</h3>
+                        <p>
+                          每一個合作案皆由辰妍指派專人跟進，確保執行品質與時程。
+                        </p>
+                      </li>
+                      <li>
+                        <h3>行銷共推</h3>
+                        <p>
+                          可同步進入辰妍官方社群、會員系統、媒體曝光與CRM導流。
+                        </p>
+                      </li>
+                      <li>
+                        <h3>數據回饋</h3>
+                        <p>
+                          提供專案後成效追蹤報告，協助品牌優化下一階段行銷策略。
+                        </p>
+                      </li>
+                    </ul>
+                    <img src="./images/folder_img_05.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="indexSupply__cardArea__card">
+                <img src="./images/folder_04.png" alt="">
+                <div class="text">
+                  <div class="head">
+                    <div class="number">04</div>
+                    <div class="title">顧問式服務</div>
+                  </div>
+                  <div class="detail">
+                    <p>
+                      提供素材、培訓與行銷建議，<br />
+                      協助專案快速落地並擴散。
+                    </p>
+                    <img src="./images/folder_img_04.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="indexSupply__cardArea__card">
+                <img src="./images/folder_03.png" alt="">
+                <div class="text">
+                  <div class="head">
+                    <div class="number">03</div>
+                    <div class="title">會員洞察 / 數據共用</div>
+                  </div>
+                  <div class="detail">
+                    <p>
+                      以精準會員數據協助夥伴<br />
+                      掌握市場趨勢與消費行為。
+                    </p>
+                    <img src="./images/folder_img_03.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="indexSupply__cardArea__card">
+                <img src="./images/folder_02.png" alt="">
+                <div class="text">
+                  <div class="head">
+                    <div class="number">02</div>
+                    <div class="title">通路導入 / 異業導流</div>
+                  </div>
+                  <div class="detail">
+                    <p>
+                      跨區導流與多品牌體驗合作，<br/>
+                      擴大市場接觸面。
+                    </p>
+                    <img src="./images/folder_img_02.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="indexSupply__cardArea__card">        
+                <img src="./images/folder_01.png" alt="">
+                <div class="text">
+                  <div class="head">
+                    <div class="number">01</div>
+                    <div class="title">品牌聯名 / 內容共創</div>
+                  </div>
+                  <div class="detail">
+                    <p>
+                      提供素材、培訓與行銷建議，<br />
+                      協助專案快速落地並擴散。
+                    </p>
+                    <img src="./images/folder_img_01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexPartner">
+        <div class="indexPartner__stickyArea">
+          <div class="wrapper">
+            <div class="indexPartner__title">
+              <div class="head">
+                <h2>合作</h2>
+                <h2>夥伴們</h2>
+              </div>
+            </div>
+            <div class="indexPartner__scrollArea">
+              <div class="indexPartner__cardArea">
+                <div class="indexPartner__cardArea__card">
+                  <img src="./images/card_border.png" alt="">
+                  <div class="text">
+                    <div class="logos">
+                      <img src="./images/index_partner_logo_a.jpg" alt="">
+                      <img src="./images/index_partner_logo_b.jpg" alt="">
+                    </div>
+                    <div class="title">宜倫家居 x 樂童體操</div>
+                    <div class="imgList">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                      <p>
+                        辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能品牌的線上社群推播，精準導流至宜倫家居實體門市。活動當日吸引30組家庭參與，現場成交表現亮眼，兩組家庭單筆消費達10萬元、一組家庭消費5萬元，創造總營業額達25萬元。此次合作不僅有效提升門市曝光與成交轉化率，也為平日客流較少的門市帶來顯著業績成長，展現辰妍國際在異業整合與會員導流策略上的強大效能。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="indexPartner__cardArea__card">
+                  <img src="./images/card_border.png" alt="">
+                  <div class="text">
+                    <div class="logos">
+                      <img src="./images/index_partner_logo_a.jpg" alt="">
+                      <img src="./images/index_partner_logo_b.jpg" alt="">
+                    </div>
+                    <div class="title">宜倫家居 x 樂童體操</div>
+                    <div class="imgList">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                      <p>
+                        辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能品牌的線上社群推播，精準導流至宜倫家居實體門市。活動當日吸引30組家庭參與，現場成交表現亮眼，兩組家庭單筆消費達10萬元、一組家庭消費5萬元，創造總營業額達25萬元。此次合作不僅有效提升門市曝光與成交轉化率，也為平日客流較少的門市帶來顯著業績成長，展現辰妍國際在異業整合與會員導流策略上的強大效能。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="indexPartner__cardArea__card">
+                  <img src="./images/card_border.png" alt="">
+                  <div class="text">
+                    <div class="logos">
+                      <img src="./images/index_partner_logo_a.jpg" alt="">
+                      <img src="./images/index_partner_logo_b.jpg" alt="">
+                    </div>
+                    <div class="title">宜倫家居 x 樂童體操</div>
+                    <div class="imgList">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                      <img src="./images/index_partner_image.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                      <p>
+                        辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能品牌的線上社群推播，精準導流至宜倫家居實體門市。活動當日吸引30組家庭參與，現場成交表現亮眼，兩組家庭單筆消費達10萬元、一組家庭消費5萬元，創造總營業額達25萬元。此次合作不僅有效提升門市曝光與成交轉化率，也為平日客流較少的門市帶來顯著業績成長，展現辰妍國際在異業整合與會員導流策略上的強大效能。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexBrand">
+        <div class="indexBrand__stickyArea">
+          <div class="wrapper">
+            <div class="indexBrand__title">
+              <div class="head">
+                <h2>我們的</h2>
+                <h2>品牌家族</h2>
+              </div>
+            </div>
+            <div class="indexBrand__cardArea">
+              <div class="indexBrand__cardArea__card active">
+                <div class="detail">
+                  <img src="./images/index_brand_logo_a.png" alt="">
+                  <div class="slogan">
+                    <div class="head">守護希望‧無限可能</div>
+                    <ul class="linkList">
+                      <li>
+                        <img src="./images/link_fb.png" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/link_ig.png" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="./images/index_brand_img.jpg" alt="">
+                </div>
+              </div>
+              <div class="indexBrand__cardArea__card">
+                <div class="detail">
+                  <img src="" alt="">
+                  <div class="slogan">
+                    <div class="head"></div>
+                    <ul class="linkList">
+                      <li>
+                        <img src="" alt="">
+                      </li>
+                      <li>
+                        <img src="" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexStore">
+        <div class="indexStore__stickyArea">
+          <div class="wrapper">
+            <div class="indexStore__list">
+              <div class="head">台北市</div>
+              <ul>
+                <li>
+                  <img src="./images/index_store_img_a.jpg" alt="">
+                  <div class="detail">
+                    <h3>小詩琦台北店</h3>
+                    <span>103 台北市大同區重慶北路三段 207 號</span>
+                    <span>02-2585-9123</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/index_store_img_a.jpg" alt="">
+                  <div class="detail">
+                    <h3>小詩琦台北店</h3>
+                    <span>103 台北市大同區重慶北路三段 207 號</span>
+                    <span>02-2585-9123</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="indexStore__map">
+              <div class="map">
+                <img src="./images/index_store_map.jpg" alt="">
+              </div>
+              <div class="positionArea">
+                <div class="position"></div>
+                <div class="position"></div>
+                <div class="position"></div>
+              </div>
+              <div class="infoArea">
+                <div class="info"></div>
+                <div class="info"></div>
+                <div class="info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexNews">
+        <div class="indexNews__stickyArea">
+          <div class="wrapper">
+            <div class="indexNews__title">
+              <div class="head">
+                <h2>最新消息</h2>
+              </div>
+            </div>
+            <div class="indexNews__cardArea">
+              <div class="indexNews__cardArea__card">
+                <img src="./images/card_gradient.png" alt="">
+                <div class="text">
+                  <div class="date">2025/11/01</div>
+                  <div class="title">辰妍會員日x齒妍堂x花小姐說晚安</div>
+                  <div class="subtitle">活動花絮照回顧</div>
+                  <div class="detail">
+                    <p>
+                      11/1 的辰妍會員日，我們一起化身小小牙醫師，打敗蛀牙蟲！精彩瞬間都在花絮相簿中，歡迎大家一起來找找你家寶貝可愛又專注的模樣吧。
+                    </p>
+                  </div>
+                  <img src="./images/index_news_img.jpg" alt="">
+                </div>
+              </div>
+              <div class="indexNews__cardArea__card">
+                <img src="./images/card_gradient.png" alt="">
+                <div class="text">
+                  <div class="date">2025/11/01</div>
+                  <div class="title">辰妍會員日x齒妍堂x花小姐說晚安</div>
+                  <div class="subtitle">活動花絮照回顧</div>
+                  <div class="detail">
+                    <p>
+                      11/1 的辰妍會員日，我們一起化身小小牙醫師，打敗蛀牙蟲！精彩瞬間都在花絮相簿中，歡迎大家一起來找找你家寶貝可愛又專注的模樣吧。
+                    </p>
+                  </div>
+                  <img src="./images/index_news_img.jpg" alt="">
+                </div>
+              </div>
+              <div class="indexNews__cardArea__card">
+                <img src="./images/card_gradient.png" alt="">
+                <div class="text">
+                  <div class="date">2025/11/01</div>
+                  <div class="title">辰妍會員日x齒妍堂x花小姐說晚安</div>
+                  <div class="subtitle">活動花絮照回顧</div>
+                  <div class="detail">
+                    <p>
+                      11/1 的辰妍會員日，我們一起化身小小牙醫師，打敗蛀牙蟲！精彩瞬間都在花絮相簿中，歡迎大家一起來找找你家寶貝可愛又專注的模樣吧。
+                    </p>
+                  </div>
+                  <img src="./images/index_news_img.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="indexNews__button">
+              <div class="text">
+                View More
+              </div>
+              <img src="./images/button_open.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexRecruit">
+        <div class="indexRecruit__stickyArea">
+          <div class="wrapper">
+            <div class="text">
+              <h1>RECRUIT</h1>
+              <h2>Let's work together to create.</h2>
+            </div>
+            <div class="indexRecruit__button">
+              <div class="text">
+                Go to form 
+              </div>
+              <img src="./images/button_open.png" alt="">
+            </div>
+            <p>
+              歡迎熱愛影像、有服務熱忱，我們誠摯地歡迎您加入充滿關懷與<br />
+              創意共融的團隊中，期待與您一起學習、成長和實現夢想。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/index.js"></script>
+</html>

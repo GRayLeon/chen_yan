@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header dark">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="recruitBanner">
+        <div class="recruitBanner__stickyArea">
+          <div class="wrapper">
+            <div class="head">
+              <h1>Together,</h1>
+              <h2>We Sparkle the Future.</h2>
+            </div>
+            <div class="line"></div>
+            <div class="featureList">
+              <div class="feature active">
+                <div class="title">Together</div>
+                <p>強調合作與連結，多方協作、共同參與。</p>
+              </div>
+              <div class="feature">
+                <div class="title">We</div>
+                <p>展現出平等的角色定位，傳遞品牌對共融的承諾。</p>
+              </div>
+              <div class="feature">
+                <div class="title">Sparkle</div>
+                <p>象徵創意與靈感碰撞的閃耀火花</p>
+              </div>
+              <div class="feature">
+                <div class="title">Future</div>
+                <p>
+                  將數位創新融入家庭生活以及夥伴連結之中，<br />
+                  打造更和諧、更具啟發性的未來。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recruitCulture">
+        <div class="recruitCulture__stickyArea">
+          <div class="wrapper">
+            <div class="head">公司文化</div>
+            <div class="detail">
+              <p>
+                我們期望透過善良、純淨、美好溫暖的影像，<br />
+                讓人們感受生命的純粹，新生寶貝帶來的希望，<br />
+                也能體會親子互動中親密的陪伴、信任與愛。
+              </p>
+            </div>
+          </div>
+          <div class="picArea">
+            <img src="./images/recruit_culture_01.png" alt="">
+            <img src="./images/recruit_culture_02.png" alt="">
+            <img src="./images/recruit_culture_03.png" alt="">
+            <img src="./images/recruit_culture_04.png" alt="">
+            <img src="./images/recruit_culture_05.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="recruitPhotoWall">
+        <div class="section">
+          <div class="head">工作環境</div>
+          <div class="picSlide">
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_01.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_02.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_03.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_04.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="head">活動花絮</div>
+          <div class="picSlide">
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_05.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_04.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_03.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_02.png" alt="">
+            </div>
+            <div class="picSlide__item">
+              <img src="./images/recruit_culture_01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recruitWelfare">
+        <div class="head">福利制度</div>
+        <ul class="welfareList">
+          <li>
+            <img src="./images/recruit_welfare_01.png" alt="">
+            <h3>勞健保、勞退</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_02.png" alt="">
+            <h3>特別休假、法定假別</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_03.png" alt="">
+            <h3>運動補助金</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_04.png" alt="">
+            <h3>購書補助金</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_05.png" alt="">
+            <h3>員工 EAP 服務</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_06.png" alt="">
+            <h3>教育訓練、員工培訓</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_07.png" alt="">
+            <h3>升遷管道</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_08.png" alt="">
+            <h3>調薪制度</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_09.png" alt="">
+            <h3>獎金制度</h3>
+          </li>
+          <li>
+            <img src="./images/recruit_welfare_10.png" alt="">
+            <h3>娛樂活動：聚餐、員旅、區域聯歡活動</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="recruitVacancies">
+        <div class="section">
+          <div class="head">職缺總覽－營業部門</div>
+          <ul class="vacanciesList">
+            <li>
+              <img src="./images/recruit_vacancies_01.png" alt="">
+              <div class="button">
+                <div class="text">門市主管</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_02.png" alt="">
+              <div class="button">
+                <div class="text">門市銷售</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_03.png" alt="">
+              <div class="button">
+                <div class="text">攝影師</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_04.png" alt="">
+              <div class="button">
+                <div class="text">安撫師</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_05.png" alt="">
+              <div class="button">
+                <div class="text">造型師</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <div class="head">職缺總覽－後勤部門</div>
+          <ul class="vacanciesList">
+            <li>
+              <img src="./images/recruit_vacancies_06.png" alt="">
+              <div class="button">
+                <div class="text">設計美編</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_07.png" alt="">
+              <div class="button">
+                <div class="text">通路經營</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_08.png" alt="">
+              <div class="button">
+                <div class="text">社群經營</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_09.png" alt="">
+              <div class="button">
+                <div class="text">會員經營</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+            <li>
+              <img src="./images/recruit_vacancies_10.png" alt="">
+              <div class="button">
+                <div class="text">業務開發</div>
+                <img src="./images/button_open.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="recruitFlow">
+        <div class="head">加入辰妍</div>
+        <div class="detail">
+          <p>
+            如果你熱愛影像、有服務熱忱，並渴望在關懷與創意共融的空間中成長，我們誠摯地歡迎你加入團隊，在辰妍、小詩琦映像館和 Mayalulu 攝影公司，與我們一起不斷學習、成長和實現夢想，並享有完善的福利、培訓及升遷制度。
+          </p>
+          <ul class="timeline">
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">1</span>
+              </div>
+              <div class="context">104投遞履歷填寫線上表單</div>
+            </li>
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">2</span>
+              </div>
+              <div class="context">資格篩選</div>
+            </li>
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">3</span>
+              </div>
+              <div class="context">邀約面試</div>
+            </li>
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">4</span>
+              </div>
+              <div class="context">進行面試</div>
+            </li>
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">5</span>
+              </div>
+              <div class="context">
+                面試結果通知<br />
+                <span>(遺珠之憾，列入人才庫)</span>
+              </div>
+            </li>
+            <li>
+              <div class="step">
+                <span>Step</span>
+                <span class="number">6</span>
+              </div>
+              <div class="context">錄取報到</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="recruitJoin">
+        <div class="head">JOIN US</div>
+        <div class="subtitle">成為辰妍夥伴，讓創意持續發光</div>
+        <div class="button">
+          <div class="text">JOIN US</div>
+          <img src="./images/button_open.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/recruit.js"></script>
+</html>

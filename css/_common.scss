@@ -1,0 +1,231 @@
+body {
+  min-width: 1200px;
+}
+
+#app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #EDEDEE;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-width: 1136px;
+  padding: 24px 24px 48px;
+  margin-bottom: -120px;
+  z-index: 999;
+
+  > img {
+    height: 48px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+  }
+
+  .logo--light,
+  .logo--dark {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+  }
+
+  &.light {
+    .logo--light {
+      opacity: 1;
+    }
+    .logo--dark {
+      opacity: 0;
+    }
+    .mainNav {
+      background-color: rgba(255,255,255,.95);
+    }
+  }
+
+  &.dark {
+    .logo--light {
+      opacity: 0;
+    }
+    .logo--dark {
+      opacity: 1;
+    }
+    .mainNav {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .mainNav {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    padding: 0 48px;
+    border-radius: 32px;
+    background-color: rgba(255,255,255,.95);
+    > li {
+      position: relative;
+      > .head {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        cursor: pointer;
+      }
+      > ul {
+        display: none;
+        position: absolute;
+        top: 48px;
+        left: -48px;
+      }
+      &:hover {
+        > ul {
+          display: block;
+          padding-top: 12px;
+          width: 200px;
+          li {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255,255,255,.85);
+            padding: 12px 24px;
+            &:first-child {
+              padding-top: 24px;
+              border-top-left-radius: 24px;
+              border-top-right-radius: 24px;
+            }
+            &:last-child {
+              padding-bottom: 24px;
+              border-bottom-left-radius: 24px;
+              border-bottom-right-radius: 24px;
+            }
+            > .head {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              cursor: pointer;
+              .ch {
+                font-size: 14px;
+              }
+              .en {
+                font-size: 12px;
+                color: #408887;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 400px;
+  padding: 48px;
+  .firstPart {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    > img {
+      height: 32px;
+    }
+    .copyright {
+      color: #808080;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .secondPart {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .title, .mail {
+        font-size: 14px;
+        color: #1A818A;
+      }
+      .title {
+        font-weight: 500;
+      }
+    }
+    .link {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      li {
+        font-size: 14px;
+        color: #1A818A;
+      }
+    }
+  }
+  .thirdPart {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 14px;
+        color: #1A818A;
+        .title {
+          font-weight: 500;
+        }
+        .detail {
+          line-height: 20px;
+        }
+      }
+    }
+    .subNav {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      li {
+        font-size: 14px;
+        color: #1A818A;
+      }
+    }
+  }
+  .lastPart {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+      width: 48px;
+    }
+  }
+}

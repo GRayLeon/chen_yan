@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header light">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="storyContent">
+        <div class="head">
+          <h1>
+            <span>Stories</span>
+            <span class="small">of</span>
+            <span class="italic">Success</span>
+          </h1>
+        </div>
+        <ul class="storyContent__list">
+          <li @click="openNav('./storyInside.html')">
+            <div class="title">
+              <h3>宜倫家居 x 樂童體操</h3>
+            </div>
+            <div class="detail">
+              <div class="logo">
+                <img src="./images/story_logo.png" alt="">
+              </div>
+              <p>
+                辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。 透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能 品牌的線上社群推播，精準導流至宜倫家居實體門市。
+              </p>
+              <img src="./images/story_img.jpg" alt="">
+            </div>
+          </li>
+          <li @click="openNav('./storyInside.html')">
+            <div class="title">
+              <h3>宜倫家居 x 樂童體操</h3>
+            </div>
+            <div class="detail">
+              <div class="logo">
+                <img src="./images/story_logo.png" alt="">
+              </div>
+              <p>
+                辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。 透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能 品牌的線上社群推播，精準導流至宜倫家居實體門市。
+              </p>
+              <img src="./images/story_img.jpg" alt="">
+            </div>
+          </li>
+          <li @click="openNav('./storyInside.html')">
+            <div class="title">
+              <h3>宜倫家居 x 樂童體操</h3>
+            </div>
+            <div class="detail">
+              <div class="logo">
+                <img src="./images/story_logo.png" alt="">
+              </div>
+              <p>
+                辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。 透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能 品牌的線上社群推播，精準導流至宜倫家居實體門市。
+              </p>
+              <img src="./images/story_img.jpg" alt="">
+            </div>
+          </li>
+          <li @click="openNav('./storyInside.html')">
+            <div class="title">
+              <h3>宜倫家居 x 樂童體操</h3>
+            </div>
+            <div class="detail">
+              <div class="logo">
+                <img src="./images/story_logo.png" alt="">
+              </div>
+              <p>
+                辰妍國際致力於打造跨界共榮的品牌聯盟生態，成功促成宜倫家居與樂童體操的精準異業合作。 透過辰妍國際的專業媒合與會員資料分析，雙方鎖定 30 組高契合度親子客群，結合兒童體適能 品牌的線上社群推播，精準導流至宜倫家居實體門市。
+              </p>
+              <img src="./images/story_img.jpg" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/story.js"></script>
+</html>

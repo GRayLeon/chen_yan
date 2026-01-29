@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header dark">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="contactContent">
+        <div class="head">
+          <h2>
+            <span>LET’S</span>
+            <span class="italic">CONTACT US</span>
+          </h2>
+        </div>
+        <div class="table">
+          <div class="section">
+            <div class="title">
+              <h3>一、公司基本資料</h3>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <div class="head">
+                  <div class="number">1. </div>
+                  <div class="text">公司名稱：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">2. </div>
+                  <div class="text">聯絡人姓名／職稱：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">3. </div>
+                  <div class="text">聯絡電話／電子郵件：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">4. </div>
+                  <div class="text">公司網站或社群帳號：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">5. </div>
+                  <div class="text">公司所在縣市：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="title">
+              <h3>二、合作意向與方向</h3>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <div class="head">
+                  <div class="number">6. </div>
+                  <div class="text">您期望與辰妍的合作模式為何？（可複選）</div>
+                </div>
+                <div class="inputArea">
+                  <div class="checkboxGroup">
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="a1">
+                      <label for="a1">品牌聯名／內容共創</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="a2">
+                      <label for="a2">通路導入／異業導流</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="a3">
+                      <label for="a3">通路導入／異業導流</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="a4">
+                      <label for="a4">通路導入／異業導流</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="a5">
+                      <label for="a5">其他：</label>
+                      <input type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">7. </div>
+                  <div class="text">您希望透過本次合作達成的主要目標為？</div>
+                </div>
+                <div class="inputArea">
+                  <div class="checkboxGroup">
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="b1">
+                      <label for="b1">提升品牌曝光</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="b2">
+                      <label for="b2">拓展新客群</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="b3">
+                      <label for="b3">增加體驗互動</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="b4">
+                      <label for="b4">增加體驗互動</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="b5">
+                      <label for="b5">其他：</label>
+                      <input type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="section">
+            <div class="title">
+              <h3>三、資源與挑戰</h3>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <div class="head">
+                  <div class="number">8. </div>
+                  <div class="text">您希望辰妍能提供哪些資源支援？</div>
+                </div>
+                <div class="inputArea">
+
+                  <div class="checkboxGroup">
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="">
+                      <label for="">行銷內容製作</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="">
+                      <label for="">行銷內容製作</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="">
+                      <label for="">行銷內容製作</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="">
+                      <label for="">行銷內容製作</label>
+                    </div>
+                    <div class="checkboxItem">
+                      <input type="checkbox" name="" id="">
+                      <label for="">其他：</label>
+                      <input type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">9. </div>
+                  <div class="text">目前在品牌推廣或通路合作上，您面臨的主要挑戰為？</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">10. </div>
+                  <div class="text">您預計合作啟動時間或特殊檔期：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="title">
+              <h3>四、補充說明</h3>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <div class="head">
+                  <div class="number">11. </div>
+                  <div class="text">是否有過去合作案例／品牌可供參考？</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="question">
+                <div class="head">
+                  <div class="number">12. </div>
+                  <div class="text">其他想對辰妍團隊說的話或期待：</div>
+                </div>
+                <div class="inputArea">
+                  <input type="text" name="" id="">
+                  <div class="contactButton">
+                    <div class="text">送出表單</div>
+                    <img src="./images/button_open.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/contact.js"></script>
+</html>

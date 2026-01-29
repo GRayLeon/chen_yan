@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header light">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="storyContent">
+        <div class="head">
+          <h1>
+            <span>Stories</span>
+            <span class="small">of</span>
+            <span class="italic">Success</span>
+          </h1>
+        </div>
+        <div class="storyTitle">
+          <h3>宜倫家居 x 樂童體操</h3>
+        </div>
+        <div class="editArea">
+          <div class="mainInfo">
+            <img src="./images/storyInside_img.png" alt="" class="image">
+            <div class="detail">
+              <div class="title">本案合作成果</div>
+              <div class="text">
+                <p>
+                  • 54 萬次以上曝光<br />
+                  • 活動參與率 +42%<br />
+                  • 體驗轉換至實際消費 成長 +31%<br />
+                  • 多篇 UGC 自發分享貼文
+                </p>
+              </div>
+            </div>
+            <img src="./images/story_logo.png" alt="" class="logo">
+          </div>
+          <div class="pic_text picFirst">
+            <div class="info">
+              <div class="head">因為我們做到了</div>
+              <div class="title">• 精準觸達對的人</div>
+              <p>
+                透過 CRM 分群推播、合作品牌社群互動與任 務設計，一次活動平均觸及可超過 540,000 次曝光。
+              </p>
+            </div>
+            <div class="imgSlide longer">
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="pic_text textFirst">
+            <div class="info">
+              <div class="title">• 品牌加乘放大效果</div>
+              <p>
+                把「線上社群、門市活動、異業體驗」一起整 合，打造可重複參與、可分享的品牌體驗，使 合作品牌 轉換率提升 2.3 倍以上。
+              </p>
+            </div>
+            <div class="imgSlide">
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+              <div class="imgSlide__item">
+                <img src="./images/storyInside_photo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <img src="./images/storyInside_media.jpg" alt="">
+          </div>
+          <div class="resource">
+            <div class="head">辰妍擁有的資源</div>
+            <ul class="resourceList">
+              <li>
+                <p>
+                  已累積
+                  <span class="focus">120,000</span>
+                  <span class="suffix">+</span>
+                  <br />
+                  真實家庭會員
+                </p>
+              </li>
+              <li>
+                <p>
+                  每月可精準觸達
+                  <span class="focus">70,000</span>
+                  <span class="suffix">+</span>
+                  <br />
+                  活躍名單
+                </p>
+              </li>
+              <li>
+                <p>
+                  會員中，超過
+                  <span class="focus">80%</span>
+                  <span class="suffix"></span>
+                  <br />
+                  為 0 - 6 歲親子家庭
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sloganBanner">
+        <h1>「品牌看見的不只是曝光，而是真實的成長數據。」</h1>
+        <h2>辰妍託完整會員資料與行為軌跡，包含年齡、消費偏好及互動紀錄，達到精準行銷整合，放大品牌效益。</h2>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/storyInside.js"></script>
+</html>

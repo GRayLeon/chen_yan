@@ -1,0 +1,167 @@
+.editArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0 160px;
+  
+  .mainInfo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    overflow: hidden;
+    > .image {
+      width: calc( 50% - 40px );
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: calc( 50% - 40px );
+      color: white;
+      .title {
+        font-size: 32px;
+      }
+      .text{
+        p {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+    .logo {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 160px;
+    }
+  }
+
+  .pic_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    width: calc( 100% + 160px);
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 280px;
+      color: white;
+      .head {
+        margin-bottom: 24px;
+        font-size: 32px;;
+      }
+      .title {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+    .imgSlide {
+      width: calc( 100% - 280px - 80px );
+      white-space: nowrap;
+      &__item {
+        display: inline-block;
+        width: calc(100%/2 - 160px/2 - 32px/2);
+        margin-right: 32px;
+        img {
+          width: 100%;
+          border-radius: 16px;
+          overflow: hidden;
+        }
+      }
+      &.longer {
+        .imgSlide__item {
+          width: 280px;
+        }
+      }
+    }
+    &.picFirst {
+      margin-left: 160px;
+    }
+    &.textFirst {
+      flex-direction: row-reverse;
+      margin-right: 160px;
+      .imgSlide {
+        text-align: right;
+        &__item {
+          margin-left: 32px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .media {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    .head {
+      font-size: 32px;
+    }
+    &List {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border-left: white 1px dashed;
+      li {
+        flex: 1;
+        padding: 24px 48px;
+        border-right: white 1px dashed;
+        p {
+          color: white;
+          line-height: 24px;
+          text-align: center;
+          span {
+            color: #f5edaf;
+            &.focus {
+              font-size: 32px;
+              font-weight: bold;
+            }
+            &.suffix {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sloganBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  padding: 0 160px;
+  background-image: url('../images/storyInside_slogan.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  h1 {
+    font-size: 32px;
+    color: white;
+  }
+  h2 {
+    font-size: 16px;
+    color: white;
+  }
+}

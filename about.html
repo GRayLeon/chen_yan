@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header light">
+      <img @click="openNav('./index.html')" class="logo--light" src="./images/logo_h_light.png" alt="" class="logo">
+      <img @click="openNav('./index.html')" class="logo--dark" src="./images/logo_h_dark.png" alt="" class="logo">
+      <ul class="mainNav">
+        <li>
+          <div class="head">合作專區</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('./about.html')">
+                <div class="ch">關於我們</div>
+                <div class="en">About Us</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./service.html')">
+                <div class="ch">我們的服務</div>
+                <div class="en">Our Service</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./partner.html')">
+                <div class="ch">我們的夥伴</div>
+                <div class="en">Our Partner</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('./story.html')">
+                <div class="ch">成功案例</div>
+                <div class="en">Stories of Success</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="head">會員專區</div>
+        </li>
+        <li>
+          <div class="head">品牌與服務總覽</div>
+        </li>
+        <li>
+          <div class="head">辰妍圈起來購</div>
+        </li>
+        <li>
+          <div class="head" @click="openNav('./recruit.html')">加入我們</div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="aboutBanner">
+        <div class="aboutTitle">
+          <h1>Together, We Sparkle the Future.</h1>
+          <h2>故事從這裡開始</h2>
+        </div>
+        <div class="aboutSection">
+          <div class="head">從影像出發，凝聚信任的力量</div>
+          <div class="detail">
+            <p>
+              辰妍國際文化娛樂股份有限公司的誕生，源自一個溫柔的起點 —— 2016 年創立的 母嬰影像品牌「小詩琦映像館」。
+            </p>
+          </div>
+        </div>
+        <div class="aboutSection">
+          <div class="head">創辦人 李軒宇</div>
+          <div class="detail">
+            <p>
+              以「陪你一起長大」為理念，將攝影從單純的紀錄行為，昇華為情感經營與家庭信任的延伸。透過光影與溫度，小詩琦成功建立了台灣母嬰攝影市場的信任典範，並形成穩固的會員基礎與品牌口碑。
+            </p>
+            <div class="pic_text">
+              <img src="./images/about_photo.jpg" alt="">
+              <div class="text">
+                <div class="textList">
+                  <p>
+                    隨著市場變化與客群多樣化，小詩琦不再只是影 像館，而成為家庭生活文化的起點。
+                  </p>
+                  <p>
+                    2023 年，辰妍國際文化娛樂股份有限公司正式成 立，開啟了企業的多品牌轉型與文化生態佈局之 路。
+                  </p>
+                </div>
+                <img class="signature" src="./images/about_signature.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aboutFeature">
+          <div class="head">從影像服務到文化娛樂生態</div>
+          <div class="detail">
+            <p>
+              辰妍國際的成長策略並非僅止於「影像服務業者」角色，而是以「家庭生活文化平台 」為終極願景，打造橫跨家庭全生命週期的多品牌生態體系。此轉型策略以三大主軸 推動:
+            </p>
+            <ul class="cardList">
+              <li>
+                <div class="title">
+                  <span class="bg">01</span>
+                  <span>生態多元化</span>
+                </div>
+                <p>
+                  從母嬰影像出發，延伸至 導入 AI 修圖、ERP、 以影像為核心內容，延伸至女性、寵物與熟齡市場， 建立「家庭 × 情感 × 記 憶」的多層陪伴鏈。
+                </p>
+              </li>
+              <li>
+                <div class="title">
+                  <span class="bg">02</span>
+                  <span>數位智能化</span>
+                </div>
+                <p>
+                  導入 AI 修圖、ERP、CRM 與會員系統，實現 跨品牌的資料連動與顧客 洞察。
+                </p>
+              </li>
+              <li>
+                <div class="title">
+                  <span class="bg">03</span>
+                  <span>文化內容化</span>
+                </div>
+                <p>
+                  以影像為核心內容，延伸至社群經營、品牌聯盟、活動 策展，轉化為「文化娛樂 × 商業模式」的新型態營運。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="aboutFaith">
+        <div class="aboutFaith__stickyArea">
+          <div class="wrapper">
+            <div class="head">
+              <h1>
+                Together,<br />
+                <span>We Sparkle the Future</span>
+              </h1>
+            </div>
+            <div class="detail">
+              <p>
+                不僅是辰妍國際的品牌標語，更是企業運作的核心信念。我們相信，唯有彼此協作、共創價值，才能讓文化與創意的火花持續閃耀。
+              </p>
+            </div>
+            <div class="cardArea">
+              <div class="cardArea__card">
+                <img src="./images/about_faith_tag.png" alt="">
+                <div class="text">
+                  <div class="tag">Together</div>
+                  <div class="title">協作與共創</div>
+                  <p>
+                    強調多方協力與產業鏈共榮，與夥伴、顧客、員工共同參與品牌成長。
+                  </p>
+                </div>
+              </div>
+              <div class="cardArea__card">
+                <img src="./images/about_faith_tag.png" alt="">
+                <div class="text">
+                  <div class="tag">We</div>
+                  <div class="title">平等與共融</div>
+                  <p>
+                    展現平等角色定位，傳遞品牌對「家庭」與「夥伴」之間連結的承諾。
+                  </p>
+                </div>
+              </div>
+              <div class="cardArea__card">
+                <img src="./images/about_faith_tag.png" alt="">
+                <div class="text">
+                  <div class="tag">Sparkle</div>
+                  <div class="title">創意與靈感</div>
+                  <p>
+                    象徵創意火花與人文感動的融合，讓影像成為生活中閃耀的記憶。
+                  </p>
+                </div>
+              </div>
+              <div class="cardArea__card">
+                <img src="./images/about_faith_tag.png" alt="">
+                <div class="text">
+                  <div class="tag">Future</div>
+                  <div class="title">啟發與延續</div>
+                  <p>
+                    將數位創新融入家庭文化中，讓科技成為情感的延伸，打造具啟發性的未來。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="image">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutMileStone">
+        <div class="aboutMileStone__stickyArea">
+          <div class="wrapper">
+            <div class="head">
+              <div class="text">
+                <div class="title">一路上的歷程</div>
+                <p>
+                  多品牌之間透過共用會員體系與統一營運架構，<br />形成「一生多階段、一帳號多體驗」的成長陪伴鏈，體現辰妍國際的整體生態價值。
+                </p>
+              </div>
+              <div class="years">
+                <div class="year active">2016</div>
+                <div class="year">2015</div>
+                <div class="year">2014</div>
+              </div>
+            </div>
+            <div class="mailStoneList">
+              <div class="title">
+                <div class="name">小詩琦 Tinyck</div>
+                <img src="./images/about_mileStone_logo.png" alt="">
+              </div>
+              <div class="detail">
+                <p>
+                  ・ 新生兒與親子影像旗艦品牌<br />
+                  ・ 準媽媽、新手父母<br />
+                  ・ 家庭影像初始信任點，啟動會員生命週期。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutBase">
+        <div class="head">我們深根於</div>
+        <div class="cardArea">
+          <div class="card">
+            <img src="./images/card_gradient_y.png" alt="">
+            <div class="text">
+              <div class="cardDetail">
+                <div class="number">(1)</div>
+                <div class="title">品牌與市場多元化</div>
+                <div class="detail">
+                  <p>
+                    以母嬰市場為起點，擴展至女性、寵物、熟齡與 海外市場。
+                  </p>
+                </div>
+              </div>
+              <div class="cardDetail">
+                <div class="number">(2)</div>
+                <div class="title">顧客生命周期經營</div>
+                <div class="detail">
+                  <p>
+                    以「家庭全週期」為核心，從孕期到祖孫同堂， 延伸消費深度。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card_gradient_y.png" alt="">
+            <div class="text">
+              <div class="cardDetail">
+                <div class="number">(3)</div>
+                <div class="title">數據 × 內容 × 聯盟生態</div>
+                <div class="detail">
+                  <p>
+                    建立會員共通體系與異業合作網絡，強化平台經 濟效應。
+                  </p>
+                </div>
+                <ul class="featureList">
+                  <li>
+                    <div class="subtitle">會員生態系</div>
+                    <p>
+                      LINE社群/辰妍圈起來<br />
+                      點數共通制/CRM整合<br />
+                      AI行銷與數據系統
+                    </p>
+                  </li>
+                  <li>
+                    <div class="subtitle">異業聯盟/合作平台</div>
+                    <p>
+                      月子中心/飯店/保養品牌<br />
+                      醫療健康/保險/旅遊平台<br />
+                      媒體/內容/品牌合作
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutMission">
+        <div class="head">我們能幫上的事</div>
+        <div class="skillTree">
+          <img src="./images/about_mission_logo.png" alt="" class="logo">
+          <ul>
+            <li>
+              <div class="title">品牌信任建立</div>
+              <p>
+                透過高品質影像與服務流程，累積大量正向口碑。
+              </p>
+            </li>
+            <li>
+              <div class="title">會員沉澱與再行銷</div>
+              <p>
+                以共通點數與回饋制度，建立多品牌共通會員系統。
+              </p>
+            </li>
+            <li>
+              <div class="title">異業生態合作</div>
+              <p>
+                導入月子中心、飯店、保養品牌、旅遊與金融業夥伴。
+              </p>
+            </li>
+            <li>
+              <div class="title">生態擴張與內容再生</div>
+              <p>
+                以 UGC 與社群活動創造持續曝光與品牌再循環。
+              </p>
+            </li>
+            <li>
+              <div class="title">數據回饋、品牌再成長</div>
+              <p>
+                AI 與數據閉環，整合 ERP 與 CRM 資料， 優化營運決策與跨品牌行銷策略。
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="end">
+          <p>
+            讓每位顧客成為「共創者」，讓每個品牌成為「生態節點」，<br />
+            最終形成自我成長的文化娛樂體系。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="firstPart">
+        <img src="./images//logo_f_b.png" alt="">
+        <div class="copyright">
+          © 2025 Chen Yan International<br />
+          Culture & Entertainment. All Rights Reserved.
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="info">
+          <div class="title">辰妍國際文化娛樂股份有限公司</div>
+          <div class="mail">tinyckmkt02@gmail.com</div>
+        </div>
+        <ul class="link">
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div class="thirdPart">
+        <ul class="contact">
+          <li>
+            <div class="title">總公司</div>
+            <div class="detail">
+              330 桃園市桃園區三民路一段193號<br />
+              TEL:(03)3310 838
+            </div>
+          </li>
+          <li>
+            <div class="title">台中辦公室</div>
+            <div class="detail">
+              407 台中市西屯區漢口路二段219號3樓<br />
+              TEL:(04)2316 8985
+            </div>
+          </li>
+        </ul>
+        <ul class="subNav">
+          <li>服務條款與細則</li>
+          <li>隱私權政策</li>
+        </ul>
+      </div>
+      <div class="lastPart">
+        <img src="./images/logo_f_s.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="/js/about.js"></script>
+</html>
