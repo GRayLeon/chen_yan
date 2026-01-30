@@ -12,12 +12,18 @@
   background-position: center;
   h1 {
     font-size: 80px;
+    line-height: 50px;
     color: white;
-  }
-  h2 {
-    font-size: 32px;
-    color: white;
-    padding-left: 160px;
+    background-image: url(../images/index_banner_text_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    span {
+      font-size: 32px;
+      padding-left: 160px;
+    }
   }
 }
 
@@ -235,11 +241,11 @@
             }
           }
           img {
-            width: 160px;
-            height: 160px;
+            width: 140px;
+            height: 140px;
             object-fit: contain;
             object-position: center;
-            padding: 24px;
+            padding: 16px;
             border-radius: 24px;
             overflow: hidden;
             background-color: white;
@@ -317,8 +323,7 @@
   &__scrollArea {
     position: relative;
     width: calc( 100% - 280px );
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   &__cardArea {
     display: flex;
@@ -343,13 +348,13 @@
         gap: 24px;
         width: 100%;
         height: 100%;
-        padding: 32px 32px;
+        padding: 40px 32px;
         .logos {
           display: flex;
           flex-direction: row;
           gap: 16px;
           img {
-            height: 48px;
+            height: 24px;
           }
         }
         .title {
@@ -634,7 +639,7 @@
           }
         }
         > img {
-          height: 120px;
+          height: 128px;
           border-radius: 8px;
           overflow: hidden;
         }

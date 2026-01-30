@@ -313,16 +313,20 @@
     }
   }
   .mailStoneList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 80px;
     border-top: white 1px solid;
+    .mailStone {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 80px 0;
+      border-bottom: white 1px solid;
+    }
     .title {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 48px;
+      gap: 120px;
       .name {
         color: white;
         font-size: 18px;
@@ -350,18 +354,17 @@
   background-size: 100% 100%;
   background-position: center;
   .head {
-    flex: 1;
     font-size: 24px;
     line-height: 40px;
     color: #f5edaf;
+    white-space: nowrap;
   }
   .cardArea {
-    flex: 3;
     display: flex;
     flex-direction: row;
     .card {
       position: relative;
-      width: calc((100% - 48px) / 2);
+      width: 480px;
       &:last-child {
         margin-left: -48px;
       }
@@ -378,7 +381,7 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 8px;
-        padding: 48px 48px 104px;
+        padding: 48px 48px 120px;
         .cardDetail {
           display: flex;
           flex-direction: column;
@@ -398,12 +401,12 @@
           .featureList {
             display: flex;
             flex-direction: column;
-            margin-top: 24px;
+            gap: 16px;
             li {
               display: flex;
               flex-direction: row;
               justify-content: space-between;
-              padding: 16px 0;
+              padding: 16px 0 0;
               border-top: #000 1px solid;
               font-size: 14px;
               line-height: 24px;
@@ -444,7 +447,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 0 48px 96px 48px;
+        padding: 0 48px 120px 48px;
         color: white;
         &:nth-child(n + 1) {
           align-items: flex-end;
@@ -457,9 +460,9 @@
           width: 50vw;
         }
         .title {
-          font-size: 24px;
+          font-size: 18px;
         }
-        .p {
+        p {
           font-size: 12px;
           line-height: 20px;
         }

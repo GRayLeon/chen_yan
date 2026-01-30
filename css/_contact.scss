@@ -97,6 +97,37 @@
             .number {
               width: 40px;
             }
+            .text {
+              position: relative;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 8px;
+              &.required::before {
+                content: '*';
+                position: absolute;
+                top: 4px;
+                left: -14px;
+                color: red;
+                font-size: 12px;
+                margin-left: 4px;
+              }
+              .upload {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                font-size: 12px;
+                color: white;
+                background-color: #1a818a;
+                padding: 8px 12px;
+                border-radius: 24px;
+                cursor: pointer;
+                img {
+                  width: 16px;
+                }
+              }
+            }
           }
           .inputArea {
             display: flex;
@@ -110,6 +141,7 @@
               border: 0;
               border-bottom: 1px solid #1a818a;
               outline: none;
+              background-color: transparent;
             }
             textarea {
               padding: 8px;

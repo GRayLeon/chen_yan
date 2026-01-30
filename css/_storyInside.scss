@@ -4,8 +4,8 @@
   align-items: center;
   gap: 80px;
   width: 100vw;
-  overflow: hidden;
   padding: 0 160px;
+  overflow: hidden;
   
   .mainInfo {
     position: relative;
@@ -23,11 +23,11 @@
       width: calc( 50% - 40px );
       color: white;
       .title {
-        font-size: 32px;
+        font-size: 24px;
       }
       .text{
         p {
-          font-size: 16px;
+          font-size: 12px;
           line-height: 28px;
         }
       }
@@ -46,6 +46,7 @@
     align-items: center;
     gap: 80px;
     width: calc( 100% + 160px);
+    overflow: visible;
     .info {
       display: flex;
       flex-direction: column;
@@ -54,10 +55,10 @@
       color: white;
       .head {
         margin-bottom: 24px;
-        font-size: 32px;;
+        font-size: 24px;;
       }
       .title {
-        font-size: 24px;
+        font-size: 18px;
       }
       p {
         font-size: 12px;
@@ -65,10 +66,12 @@
       }
     }
     .imgSlide {
-      width: calc( 100% - 280px - 80px );
-      white-space: nowrap;
+      width: calc( 100vw - 280px - 160px - 80px );
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow: visible;
       &__item {
-        display: inline-block;
         width: calc(100%/2 - 160px/2 - 32px/2);
         margin-right: 32px;
         img {
@@ -79,7 +82,10 @@
       }
       &.longer {
         .imgSlide__item {
-          width: 280px;
+          width: 320px !important;
+          img {
+            width: 320px !important;
+          }
         }
       }
     }
@@ -90,7 +96,10 @@
       flex-direction: row-reverse;
       margin-right: 160px;
       .imgSlide {
-        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        overflow: visible;
         &__item {
           margin-left: 32px;
           margin-right: 0;
@@ -113,7 +122,7 @@
     gap: 80px;
     width: 100%;
     .head {
-      font-size: 32px;
+      font-size: 24px;
     }
     &List {
       display: flex;
@@ -131,11 +140,11 @@
           span {
             color: #f5edaf;
             &.focus {
-              font-size: 32px;
+              font-size: 24px;
               font-weight: bold;
             }
             &.suffix {
-              font-size: 24px;
+              font-size: 18px;
             }
           }
         }
@@ -157,11 +166,11 @@
   background-position: center;
   height: 70vh;
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     color: white;
   }
   h2 {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
   }
 }

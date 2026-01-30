@@ -422,11 +422,20 @@ body {
 .header.dark .mainNav {
   background-color: #f1f1f1;
 }
+.header.light__dark .logo--light {
+  opacity: 1;
+}
+.header.light__dark .logo--dark {
+  opacity: 0;
+}
+.header.light__dark .mainNav {
+  background-color: #f1f1f1;
+}
 .header .mainNav {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  padding: 0 48px;
+  padding: 0 40px;
   border-radius: 32px;
   background-color: rgba(255, 255, 255, 0.95);
 }
@@ -434,16 +443,16 @@ body {
   position: relative;
 }
 .header .mainNav > li > .head {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 40px;
   cursor: pointer;
 }
 .header .mainNav > li > ul {
   display: none;
   position: absolute;
-  top: 48px;
-  left: -48px;
+  top: 40px;
+  left: -40px;
 }
 .header .mainNav > li:hover > ul {
   display: block;
@@ -598,11 +607,17 @@ body {
 }
 .indexBanner h1 {
   font-size: 80px;
+  line-height: 50px;
   color: white;
+  background-image: url(../images/index_banner_text_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.25);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-.indexBanner h2 {
+.indexBanner h1 span {
   font-size: 32px;
-  color: white;
   padding-left: 160px;
 }
 
@@ -825,13 +840,13 @@ body {
   border-right: none;
 }
 .indexSupply__cardArea__card .text .detail img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  padding: 24px;
+  padding: 16px;
   border-radius: 24px;
   overflow: hidden;
   background-color: white;
@@ -905,8 +920,7 @@ body {
 .indexPartner__scrollArea {
   position: relative;
   width: calc(100% - 280px);
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .indexPartner__cardArea {
   display: flex;
@@ -933,7 +947,7 @@ body {
   gap: 24px;
   width: 100%;
   height: 100%;
-  padding: 32px 32px;
+  padding: 40px 32px;
 }
 .indexPartner__cardArea__card .text .logos {
   display: flex;
@@ -941,7 +955,7 @@ body {
   gap: 16px;
 }
 .indexPartner__cardArea__card .text .logos img {
-  height: 48px;
+  height: 24px;
 }
 .indexPartner__cardArea__card .text .title {
   font-size: 16px;
@@ -1225,7 +1239,7 @@ body {
   line-height: 20px;
 }
 .indexNews__cardArea__card .text > img {
-  height: 120px;
+  height: 128px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1628,17 +1642,21 @@ body {
   opacity: 1;
 }
 .aboutMileStone .mailStoneList {
+  border-top: white 1px solid;
+}
+.aboutMileStone .mailStoneList .mailStone {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 80px;
-  border-top: white 1px solid;
+  padding: 80px 0;
+  border-bottom: white 1px solid;
 }
 .aboutMileStone .mailStoneList .title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 48px;
+  gap: 120px;
 }
 .aboutMileStone .mailStoneList .title .name {
   color: white;
@@ -1665,19 +1683,18 @@ body {
   background-position: center;
 }
 .aboutBase .head {
-  flex: 1;
   font-size: 24px;
   line-height: 40px;
   color: #f5edaf;
+  white-space: nowrap;
 }
 .aboutBase .cardArea {
-  flex: 3;
   display: flex;
   flex-direction: row;
 }
 .aboutBase .cardArea .card {
   position: relative;
-  width: calc((100% - 48px) / 2);
+  width: 480px;
 }
 .aboutBase .cardArea .card:last-child {
   margin-left: -48px;
@@ -1695,7 +1712,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
-  padding: 48px 48px 104px;
+  padding: 48px 48px 120px;
 }
 .aboutBase .cardArea .card .text .cardDetail {
   display: flex;
@@ -1717,13 +1734,13 @@ body {
 .aboutBase .cardArea .card .text .cardDetail .featureList {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  gap: 16px;
 }
 .aboutBase .cardArea .card .text .cardDetail .featureList li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 16px 0 0;
   border-top: #000 1px solid;
   font-size: 14px;
   line-height: 24px;
@@ -1761,7 +1778,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 48px 96px 48px;
+  padding: 0 48px 120px 48px;
   color: white;
 }
 .aboutMission .skillTree ul li:nth-child(n+1) {
@@ -1775,9 +1792,9 @@ body {
   width: 50vw;
 }
 .aboutMission .skillTree ul li .title {
-  font-size: 24px;
+  font-size: 18px;
 }
-.aboutMission .skillTree ul li .p {
+.aboutMission .skillTree ul li p {
   font-size: 12px;
   line-height: 20px;
 }
@@ -1982,15 +1999,17 @@ body {
 .serviceFlow__stickyArea .wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 160px;
-  height: 100%;
+  height: 100vh;
   padding: 160px 0 80px;
 }
 .serviceFlow__stickyArea .wrapper .info {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 60%;
+  height: 100%;
   color: white;
 }
 .serviceFlow__stickyArea .wrapper .info .head {
@@ -2027,11 +2046,7 @@ body {
 .serviceFlow__stickyArea .wrapper .info .featureArea .feature.active {
   opacity: 1;
 }
-.serviceFlow__stickyArea .wrapper .image {
-  flex: 1;
-}
 .serviceFlow__stickyArea .wrapper .image .firstPart, .serviceFlow__stickyArea .wrapper .image .secondPart {
-  width: 100%;
   display: none;
 }
 .serviceFlow__stickyArea .wrapper .image .firstPart.active, .serviceFlow__stickyArea .wrapper .image .secondPart.active {
@@ -2039,7 +2054,6 @@ body {
 }
 .serviceFlow__stickyArea .wrapper .image .imageArea {
   position: relative;
-  width: 100%;
   padding: 48px;
   border-radius: 24px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -2048,11 +2062,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 400px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   opacity: 0;
 }
 .serviceFlow__stickyArea .wrapper .image .imageArea img:first-child {
   position: static;
+  width: 400px;
 }
 .serviceFlow__stickyArea .wrapper .image .imageArea img.active {
   opacity: 1;
@@ -2271,8 +2292,8 @@ body {
   align-items: center;
   gap: 80px;
   width: 100vw;
-  overflow: hidden;
   padding: 0 160px;
+  overflow: hidden;
 }
 .editArea .mainInfo {
   position: relative;
@@ -2292,10 +2313,10 @@ body {
   color: white;
 }
 .editArea .mainInfo .detail .title {
-  font-size: 32px;
+  font-size: 24px;
 }
 .editArea .mainInfo .detail .text p {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 28px;
 }
 .editArea .mainInfo .logo {
@@ -2310,6 +2331,7 @@ body {
   align-items: center;
   gap: 80px;
   width: calc(100% + 160px);
+  overflow: visible;
 }
 .editArea .pic_text .info {
   display: flex;
@@ -2320,21 +2342,23 @@ body {
 }
 .editArea .pic_text .info .head {
   margin-bottom: 24px;
-  font-size: 32px;
+  font-size: 24px;
 }
 .editArea .pic_text .info .title {
-  font-size: 24px;
+  font-size: 18px;
 }
 .editArea .pic_text .info p {
   font-size: 12px;
   line-height: 24px;
 }
 .editArea .pic_text .imgSlide {
-  width: calc(100% - 280px - 80px);
-  white-space: nowrap;
+  width: calc(100vw - 280px - 160px - 80px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: visible;
 }
 .editArea .pic_text .imgSlide__item {
-  display: inline-block;
   width: calc(50% - 80px - 16px);
   margin-right: 32px;
 }
@@ -2344,7 +2368,10 @@ body {
   overflow: hidden;
 }
 .editArea .pic_text .imgSlide.longer .imgSlide__item {
-  width: 280px;
+  width: 320px !important;
+}
+.editArea .pic_text .imgSlide.longer .imgSlide__item img {
+  width: 320px !important;
 }
 .editArea .pic_text.picFirst {
   margin-left: 160px;
@@ -2354,7 +2381,10 @@ body {
   margin-right: 160px;
 }
 .editArea .pic_text.textFirst .imgSlide {
-  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  overflow: visible;
 }
 .editArea .pic_text.textFirst .imgSlide__item {
   margin-left: 32px;
@@ -2374,7 +2404,7 @@ body {
   width: 100%;
 }
 .editArea .resource .head {
-  font-size: 32px;
+  font-size: 24px;
 }
 .editArea .resourceList {
   display: flex;
@@ -2396,11 +2426,11 @@ body {
   color: #f5edaf;
 }
 .editArea .resourceList li p span.focus {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
 }
 .editArea .resourceList li p span.suffix {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .sloganBanner {
@@ -2417,11 +2447,11 @@ body {
   height: 70vh;
 }
 .sloganBanner h1 {
-  font-size: 32px;
+  font-size: 24px;
   color: white;
 }
 .sloganBanner h2 {
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 
@@ -2604,6 +2634,37 @@ body {
 .contactContent .table .section .questions .question .head .number {
   width: 40px;
 }
+.contactContent .table .section .questions .question .head .text {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.contactContent .table .section .questions .question .head .text.required::before {
+  content: "*";
+  position: absolute;
+  top: 4px;
+  left: -14px;
+  color: red;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.contactContent .table .section .questions .question .head .text .upload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: white;
+  background-color: #1a818a;
+  padding: 8px 12px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.contactContent .table .section .questions .question .head .text .upload img {
+  width: 16px;
+}
 .contactContent .table .section .questions .question .inputArea {
   display: flex;
   flex-direction: row;
@@ -2617,6 +2678,7 @@ body {
   border: 0;
   border-bottom: 1px solid #1a818a;
   outline: none;
+  background-color: transparent;
 }
 .contactContent .table .section .questions .question .inputArea textarea {
   padding: 8px;
@@ -2728,9 +2790,10 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  margin-top: -8px;
 }
 .recruitBanner .head h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 .recruitBanner .head h2 {
   font-size: 24px;
@@ -2746,7 +2809,7 @@ body {
   justify-content: flex-start;
   gap: 24px;
   width: 680px;
-  height: 80px;
+  height: 56px;
 }
 .recruitBanner .featureList .feature {
   display: flex;
@@ -2868,6 +2931,7 @@ body {
 }
 .recruitPhotoWall .section .picSlide__item img {
   width: 360px;
+  border-radius: 16px;
 }
 
 .recruitWelfare {
@@ -3077,7 +3141,9 @@ body {
   gap: 16px;
   width: 100%;
   height: 100vh;
-  background-color: #1a818a;
+  background-image: url("../images/recruit_join_bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .recruitJoin .head {
   font-size: 100px;

@@ -14,6 +14,7 @@ createApp({
       watchInView(
         '.indexBanner',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('dark')
           header.classList.add('light')
         }
@@ -22,6 +23,7 @@ createApp({
       watchInView(
         '.indexAbout',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('dark')
           header.classList.add('light')
         }
@@ -30,6 +32,7 @@ createApp({
       watchInView(
         '.indexSupply',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('light')
           header.classList.add('dark')
         }
@@ -38,6 +41,7 @@ createApp({
       watchInView(
         '.indexBrand',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('light')
           header.classList.add('dark')
         }
@@ -47,13 +51,15 @@ createApp({
         '.indexStore',
         () => {
           header.classList.remove('dark')
-          header.classList.add('light')
+          header.classList.remove('light')
+          header.classList.add('light__dark')
         }
       )
 
       watchInView(
         '.indexNews',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('light')
           header.classList.add('dark')
         }
@@ -62,6 +68,7 @@ createApp({
       watchInView(
         '.indexRecruit',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('dark')
           header.classList.add('light')
         }
@@ -70,6 +77,7 @@ createApp({
       watchInView(
         '.recruitPhotoWall',
         () => {
+          header.classList.remove('light__dark')
           header.classList.remove('dark')
           header.classList.add('light')
         }

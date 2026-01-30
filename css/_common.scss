@@ -66,26 +66,38 @@ body {
     }
   }
 
+  &.light__dark {
+    .logo--light {
+      opacity: 1;
+    }
+    .logo--dark {
+      opacity: 0;
+    }
+    .mainNav {
+      background-color: #f1f1f1;
+    }
+  }
+
   .mainNav {
     display: flex;
     flex-direction: row;
     gap: 36px;
-    padding: 0 48px;
+    padding: 0 40px;
     border-radius: 32px;
     background-color: rgba(255,255,255,.95);
     > li {
       position: relative;
       > .head {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 48px;
+        line-height: 40px;
         cursor: pointer;
       }
       > ul {
         display: none;
         position: absolute;
-        top: 48px;
-        left: -48px;
+        top: 40px;
+        left: -40px;
       }
       &:hover {
         > ul {
