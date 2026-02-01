@@ -3,13 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
   width: 100%;
-  max-width: 1366px;
   padding: 120px 80px;
   background-image: url('../images/partner_bg.png');
   background-size: cover;
   background-position: center;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    max-width: 1200px;
+  }
   .head {
     h2 {
       display: flex;
@@ -33,6 +38,7 @@
       flex-wrap: wrap;
       gap: 48px;
       width: 100%;
+      max-width: 1366px;
     }
     &Area {
       width: calc( 50% - 24px );

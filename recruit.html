@@ -39,6 +39,12 @@
                 <div class="en">Stories of Success</div>
               </div>
             </li>
+            <li>
+              <div class="head" @click="openNav('./contact.html')">
+                <div class="ch">合作咨詢</div>
+                <div class="en">Contact Us</div>
+              </div>
+            </li>
           </ul>
         </li>
         <li>
@@ -46,6 +52,33 @@
         </li>
         <li>
           <div class="head">品牌與服務總覽</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">小詩琦映像館</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">MAYALULU</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">CAPPI</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">Risle</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">辰妍商業攝影</div>
+              </div>
+            </li>
+          </ul>
         </li>
         <li>
           <div class="head">辰妍圈起來購</div>
@@ -149,53 +182,55 @@
         </div>
       </div>
       <div class="recruitWelfare">
-        <div class="head">福利制度</div>
-        <ul class="welfareList">
-          <li>
-            <img src="./images/recruit_welfare_01.png" alt="">
-            <h3>勞健保、勞退</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_02.png" alt="">
-            <h3>特別休假、法定假別</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_03.png" alt="">
-            <h3>運動補助金</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_04.png" alt="">
-            <h3>購書補助金</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_05.png" alt="">
-            <h3>員工 EAP 服務</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_06.png" alt="">
-            <h3>教育訓練、員工培訓</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_07.png" alt="">
-            <h3>升遷管道</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_08.png" alt="">
-            <h3>調薪制度</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_09.png" alt="">
-            <h3>獎金制度</h3>
-          </li>
-          <li>
-            <img src="./images/recruit_welfare_10.png" alt="">
-            <h3>娛樂活動：聚餐、員旅、區域聯歡活動</h3>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <div class="head">福利制度</div>
+          <ul class="welfareList">
+            <li>
+              <img src="./images/recruit_welfare_01.png" alt="">
+              <h3>勞健保、勞退</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_02.png" alt="">
+              <h3>特別休假、法定假別</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_03.png" alt="">
+              <h3>運動補助金</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_04.png" alt="">
+              <h3>購書補助金</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_05.png" alt="">
+              <h3>員工 EAP 服務</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_06.png" alt="">
+              <h3>教育訓練、員工培訓</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_07.png" alt="">
+              <h3>升遷管道</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_08.png" alt="">
+              <h3>調薪制度</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_09.png" alt="">
+              <h3>獎金制度</h3>
+            </li>
+            <li>
+              <img src="./images/recruit_welfare_10.png" alt="">
+              <h3>娛樂活動：聚餐、員旅、區域聯歡活動</h3>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="recruitVacancies">
         <div class="section">
-          <div class="head">職缺總覽－營業部門</div>
+          <div class="head">職務總覽－營業部門</div>
           <ul class="vacanciesList">
             <li>
               <img src="./images/recruit_vacancies_01.png" alt="">
@@ -236,7 +271,7 @@
           </ul>
         </div>
         <div class="section">
-          <div class="head">職缺總覽－後勤部門</div>
+          <div class="head">職務總覽－後勤部門</div>
           <ul class="vacanciesList">
             <li>
               <img src="./images/recruit_vacancies_06.png" alt="">
@@ -332,11 +367,18 @@
         </div>
       </div>
       <div class="recruitJoin">
-        <div class="head">JOIN US</div>
-        <div class="subtitle">成為辰妍夥伴，讓創意持續發光</div>
-        <div class="button">
-          <div class="text">JOIN US</div>
-          <img src="./images/button_open.png" alt="">
+        <div class="bgFlow">
+          <img ref="orb1" src="/images/light_flow_b.png" class="orb orb_b" />
+          <img ref="orb2" src="/images/light_flow_m.png" class="orb orb_m" />
+          <img ref="orb3" src="/images/light_flow_s.png" class="orb orb_s" />
+        </div>
+        <div class="cover">
+          <div class="head">JOIN US</div>
+          <div class="subtitle">成為辰妍夥伴，讓創意持續發光</div>
+          <div class="button">
+            <div class="text">JOIN US</div>
+            <img src="./images/button_open.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -351,7 +393,7 @@
       <div class="secondPart">
         <div class="info">
           <div class="title">辰妍國際文化娛樂股份有限公司</div>
-          <div class="mail">tinyckmkt02@gmail.com</div>
+          <div class="mail"><a href="mailto:tinyckmkt02@gmail.com">客服信箱</a></div>
         </div>
         <ul class="link">
           <li>Instagram</li>
@@ -363,15 +405,13 @@
           <li>
             <div class="title">總公司</div>
             <div class="detail">
-              330 桃園市桃園區三民路一段193號<br />
-              TEL:(03)3310 838
+              330 桃園市桃園區三民路一段193號
             </div>
           </li>
           <li>
             <div class="title">台中辦公室</div>
             <div class="detail">
-              407 台中市西屯區漢口路二段219號3樓<br />
-              TEL:(04)2316 8985
+              407 台中市西屯區漢口路二段219號3樓
             </div>
           </li>
         </ul>

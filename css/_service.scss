@@ -3,11 +3,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
   padding: 160px 80px;
   background-image: url('../images/service_system_bg.png');
   background-size: 100% 100%;
   background-position: center;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+  }
   .head {
     h2 {
       font-size: 32px;
@@ -76,7 +83,7 @@
 
 .serviceCircle {
   width: 100%;
-  height: 500vh;
+  height: 1000vh;
   &__stickyArea {
     position: sticky;
     top: 0;
@@ -97,6 +104,7 @@
       justify-content: space-between;
       gap: 160px;
       width: 100%;
+      max-width: 1200px;
       padding-top: 160px;
       .head {
         font-size: 24px;
@@ -119,6 +127,12 @@
         width: 100%;
         &__card {
           position: relative;
+          transform: translateY(50vh);
+          opacity: 0;
+          &.active {
+            transform: translateY(0);
+            opacity: 1;
+          }
           > img {
             width: 100%;
           }
@@ -141,9 +155,19 @@
               display: flex;
               flex-direction: row;
               justify-content: space-between;
+              align-items: flex-end;
               gap: 24px;
               font-size: 14px;
               line-height: 24px;
+              img {
+                width: 160px;
+                height: 160px;
+                padding: 16px;
+                border-radius: 16px;
+                background-color: white;
+                object-fit: cover;
+                object-position: center;
+              }
             }
           }
           &:first-child {
@@ -169,7 +193,7 @@
 
 .serviceFlow {
   width: 100%;
-  height: 500vh;
+  height: 1000vh;
   &__stickyArea {
     position: sticky;
     top: 0;
@@ -189,13 +213,14 @@
       flex-direction: row;
       justify-content: space-between;
       gap: 160px;
-      height: 100vh;
+      width: 100%;
+      max-width: 1200px;
       padding: 160px 0 80px;
       .info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 60%;
+        width: calc( 100% - 496px - 160px );
         height: 100%;
         color: white;
         .head {
@@ -234,10 +259,25 @@
         }
       }
       .image {
+        position: relative;
+        background-size: 400px 400px;
+        background-position: center calc( 50% + 20px );
+        background-repeat: no-repeat;
+        width: 496px;
+        height: 496px;
+        &.smallBg {
+          background-image: url('../images/service_flow_image_bg.png');
+          background-size: 100px 100px;
+        }
         .firstPart, .secondPart {
-          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 496px;
+          height: 496px;
+          opacity: 0;
           &.active {
-            display: block;
+            opacity: 1;
           }
         }
         .imageArea {
@@ -247,17 +287,14 @@
           background-color: rgba(255,255,255,.25);
           img {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 48px;
+            left: 48px;
             width: 400px;
             height: 400px;
-            object-fit: contain;
-            object-position: center;
             &:first-child {
               position: static;
               width: 400px;
             }
-            width: 100%;
             opacity: 0;
             &.active {
               opacity: 1;
@@ -270,16 +307,54 @@
 }
 
 .serviceContact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('../images/service_contact_bg.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #46AC82;
+  .bgFlow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .orb {
+      position: absolute;
+      transform: translate(0, 0);
+      pointer-events: none;
+      will-change: transform;
+      &_b {
+        width: 400px;
+        height: 400px;
+        top: calc( 50% - 200px );
+        left: calc( 50% - 200px );
+      }
+      &_m {
+        width: 250px;
+        height: 250px;
+        top: calc( 50% - 125px );
+        left: calc( 50% - 125px );
+      }
+      &_s {
+        width: 100px;
+        height: 100px;
+        top: calc( 50% - 50px );
+        left: calc( 50% - 50px );
+      }
+    }
+  }
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
   .head {
     font-size: 100px;
     color: #f5edaf;

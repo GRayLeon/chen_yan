@@ -1,10 +1,8 @@
 .editArea {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 80px;
   width: 100vw;
-  padding: 0 160px;
   overflow: hidden;
   
   .mainInfo {
@@ -12,6 +10,9 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 calc( 50% - 600px );
     overflow: hidden;
     > .image {
       width: calc( 50% - 40px );
@@ -45,8 +46,8 @@
     flex-direction: row;
     align-items: center;
     gap: 80px;
-    width: calc( 100% + 160px);
-    overflow: visible;
+    width: calc( 100% - (50% - 600px));
+    overflow: hidden;
     .info {
       display: flex;
       flex-direction: column;
@@ -66,50 +67,40 @@
       }
     }
     .imgSlide {
-      width: calc( 100vw - 280px - 160px - 80px );
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      overflow: visible;
+      gap: 32px;
+      width: calc( 100% - 280px - 80px );
+      overflow: hidden;
       &__item {
-        width: calc(100%/2 - 160px/2 - 32px/2);
-        margin-right: 32px;
+        width: calc((100% - 280px - 32px - 80px - (50% - 600px) )/2);
         img {
           width: 100%;
           border-radius: 16px;
           overflow: hidden;
         }
       }
-      &.longer {
-        .imgSlide__item {
-          width: 320px !important;
-          img {
-            width: 320px !important;
-          }
-        }
-      }
     }
     &.picFirst {
-      margin-left: 160px;
+      margin-left: calc( 50% - 600px );
     }
     &.textFirst {
       flex-direction: row-reverse;
-      margin-right: 160px;
+      margin-right: calc( 50% - 600px );
       .imgSlide {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
         overflow: visible;
-        &__item {
-          margin-left: 32px;
-          margin-right: 0;
-        }
       }
     }
   }
 
   .media {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 calc( 50% - 600px );
     img {
       width: 100%;
     }
@@ -121,6 +112,8 @@
     align-items: center;
     gap: 80px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 calc( 50% - 600px );
     .head {
       font-size: 24px;
     }

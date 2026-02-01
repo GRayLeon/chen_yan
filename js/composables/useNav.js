@@ -1,8 +1,12 @@
 // /js/composables/useNav.js
 export function useNav() {
-  const openNav = (target) => {
+  const openNav = (target, isBlank = false) => {
     if (!target) return
-    window.location.href = target
+    if (isBlank) {
+      window.open(target, '_blank')
+    } else {
+      window.location.href = target
+    }
   }
 
   return { openNav }

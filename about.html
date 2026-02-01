@@ -39,6 +39,12 @@
                 <div class="en">Stories of Success</div>
               </div>
             </li>
+            <li>
+              <div class="head" @click="openNav('./contact.html')">
+                <div class="ch">合作咨詢</div>
+                <div class="en">Contact Us</div>
+              </div>
+            </li>
           </ul>
         </li>
         <li>
@@ -46,6 +52,33 @@
         </li>
         <li>
           <div class="head">品牌與服務總覽</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">小詩琦映像館</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">MAYALULU</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">CAPPI</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">Risle</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">辰妍商業攝影</div>
+              </div>
+            </li>
+          </ul>
         </li>
         <li>
           <div class="head">辰妍圈起來購</div>
@@ -186,7 +219,7 @@
               </div>
             </div>
             <div class="image">
-              <img src="" alt="">
+              <img src="./images/about_faith_image.jpg" alt="">
             </div>
           </div>
         </div>
@@ -201,24 +234,69 @@
                   多品牌之間透過共用會員體系與統一營運架構，<br />形成「一生多階段、一帳號多體驗」的成長陪伴鏈，體現辰妍國際的整體生態價值。
                 </p>
               </div>
-              <div class="years">
-                <div class="year active">2016</div>
+              <div class="yearArea">
+                <div class="year">2016</div>
                 <div class="year">2015</div>
                 <div class="year">2014</div>
               </div>
             </div>
-            <div class="mailStoneList">
-              <div class="mailStone">
-                <div class="title">
-                  <div class="name">小詩琦 Tinyck</div>
-                  <img src="./images/about_mileStone_logo.png" alt="">
+            <div class="mileStoneArea">
+              <div class="mileStoneList">
+                <div class="mileStone">
+                  <div class="title">
+                    <div class="name">小詩琦 Tinyck</div>
+                    <img src="./images/about_mileStone_logo.png" alt="">
+                  </div>
+                  <div class="detail">
+                    <p>
+                      ・ 新生兒與親子影像旗艦品牌<br />
+                      ・ 準媽媽、新手父母<br />
+                      ・ 家庭影像初始信任點，啟動會員生命週期。
+                    </p>
+                  </div>
                 </div>
-                <div class="detail">
-                  <p>
-                    ・ 新生兒與親子影像旗艦品牌<br />
-                    ・ 準媽媽、新手父母<br />
-                    ・ 家庭影像初始信任點，啟動會員生命週期。
-                  </p>
+              </div>
+              <div class="mileStoneList">
+                <div class="mileStone">
+                  <div class="title">
+                    <div class="name">小詩琦 Tinyck</div>
+                    <img src="./images/about_mileStone_logo.png" alt="">
+                  </div>
+                  <div class="detail">
+                    <p>
+                      ・ 新生兒與親子影像旗艦品牌<br />
+                      ・ 準媽媽、新手父母<br />
+                      ・ 家庭影像初始信任點，啟動會員生命週期。
+                    </p>
+                  </div>
+                </div>
+                <div class="mileStone">
+                  <div class="title">
+                    <div class="name">小詩琦 Tinyck</div>
+                    <img src="./images/about_mileStone_logo.png" alt="">
+                  </div>
+                  <div class="detail">
+                    <p>
+                      ・ 新生兒與親子影像旗艦品牌<br />
+                      ・ 準媽媽、新手父母<br />
+                      ・ 家庭影像初始信任點，啟動會員生命週期。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mileStoneList">
+                <div class="mileStone">
+                  <div class="title">
+                    <div class="name">小詩琦 Tinyck</div>
+                    <img src="./images/about_mileStone_logo.png" alt="">
+                  </div>
+                  <div class="detail">
+                    <p>
+                      ・ 新生兒與親子影像旗艦品牌<br />
+                      ・ 準媽媽、新手父母<br />
+                      ・ 家庭影像初始信任點，啟動會員生命週期。
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,62 +304,64 @@
         </div>
       </div>
       <div class="aboutBase">
-        <div class="head">我們深根於</div>
-        <div class="cardArea">
-          <div class="card">
-            <img src="./images/card_gradient_y.png" alt="">
-            <div class="text">
-              <div class="cardDetail">
-                <div class="number">(1)</div>
-                <div class="title">品牌與市場多元化</div>
-                <div class="detail">
-                  <p>
-                    以母嬰市場為起點，擴展至女性、寵物、熟齡與 海外市場。
-                  </p>
+        <div class="wrapper">
+          <div class="head">我們深根於</div>
+          <div class="cardArea">
+            <div class="card">
+              <img src="./images/card_gradient_y.png" alt="">
+              <div class="text">
+                <div class="cardDetail">
+                  <div class="number">(1)</div>
+                  <div class="title">品牌與市場多元化</div>
+                  <div class="detail">
+                    <p>
+                      以母嬰市場為起點，擴展至女性、寵物、熟齡與 海外市場。
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardDetail">
-                <div class="number">(2)</div>
-                <div class="title">顧客生命周期經營</div>
-                <div class="detail">
-                  <p>
-                    以「家庭全週期」為核心，從孕期到祖孫同堂， 延伸消費深度。
-                  </p>
+                <div class="cardDetail">
+                  <div class="number">(2)</div>
+                  <div class="title">顧客生命周期經營</div>
+                  <div class="detail">
+                    <p>
+                      以「家庭全週期」為核心，從孕期到祖孫同堂， 延伸消費深度。
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/card_gradient_y.png" alt="">
-            <div class="text">
-              <div class="cardDetail">
-                <div class="number">(3)</div>
-                <div class="title">數據 × 內容 × 聯盟生態</div>
-                <div class="detail">
-                  <p>
-                    建立會員共通體系與異業合作網絡，強化平台經 濟效應。
-                  </p>
+            <div class="card">
+              <img src="./images/card_gradient_y.png" alt="">
+              <div class="text">
+                <div class="cardDetail">
+                  <div class="number">(3)</div>
+                  <div class="title">數據 × 內容 × 聯盟生態</div>
+                  <div class="detail">
+                    <p>
+                      建立會員共通體系與異業合作網絡，強化平台經 濟效應。
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardDetail">
-                <ul class="featureList">
-                  <li>
-                    <div class="subtitle">會員生態系</div>
-                    <p>
-                      LINE社群/辰妍圈起來<br />
-                      點數共通制/CRM整合<br />
-                      AI行銷與數據系統
-                    </p>
-                  </li>
-                  <li>
-                    <div class="subtitle">異業聯盟/合作平台</div>
-                    <p>
-                      月子中心/飯店/保養品牌<br />
-                      醫療健康/保險/旅遊平台<br />
-                      媒體/內容/品牌合作
-                    </p>
-                  </li>
-                </ul>
+                <div class="cardDetail">
+                  <ul class="featureList">
+                    <li>
+                      <div class="subtitle">會員生態系</div>
+                      <p>
+                        LINE社群/辰妍圈起來<br />
+                        點數共通制/CRM整合<br />
+                        AI行銷與數據系統
+                      </p>
+                    </li>
+                    <li>
+                      <div class="subtitle">異業聯盟/合作平台</div>
+                      <p>
+                        月子中心/飯店/保養品牌<br />
+                        醫療健康/保險/旅遊平台<br />
+                        媒體/內容/品牌合作
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -343,7 +423,7 @@
       <div class="secondPart">
         <div class="info">
           <div class="title">辰妍國際文化娛樂股份有限公司</div>
-          <div class="mail">tinyckmkt02@gmail.com</div>
+          <div class="mail"><a href="mailto:tinyckmkt02@gmail.com">客服信箱</a></div>
         </div>
         <ul class="link">
           <li>Instagram</li>
@@ -355,15 +435,13 @@
           <li>
             <div class="title">總公司</div>
             <div class="detail">
-              330 桃園市桃園區三民路一段193號<br />
-              TEL:(03)3310 838
+              330 桃園市桃園區三民路一段193號
             </div>
           </li>
           <li>
             <div class="title">台中辦公室</div>
             <div class="detail">
-              407 台中市西屯區漢口路二段219號3樓<br />
-              TEL:(04)2316 8985
+              407 台中市西屯區漢口路二段219號3樓
             </div>
           </li>
         </ul>

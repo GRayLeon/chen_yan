@@ -177,7 +177,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 8px;
-      .title, .mail {
+      .title, .mail, .mail a {
         font-size: 14px;
         color: #1A818A;
       }

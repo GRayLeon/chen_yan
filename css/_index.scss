@@ -30,7 +30,7 @@
 .indexAbout {
   position: relative;
   width: 100%;
-  height: 400vh;
+  height: 800vh;
   &__stickyArea {
     position: sticky;
     top: 0;
@@ -75,22 +75,44 @@
     flex-direction: column;
     align-items: flex-end;
     &__item {
+      position: absolute;
+      top:0;
+      left:0;
       width: 100%;
       height: 100%;
-      display: none;
+      display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: flex-end;
+      opacity: 0;
       .text {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
         font-size: 16px;
         line-height: 28px;
         color: white;
         padding: 0 calc( ( 100vw - 1200px ) / 2 ) 0 0;
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 24px;
+          li {
+            width: calc( 50% - 12px );
+            .head {
+              color: #46ac82;
+              font-size: 24px;
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
       .image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
         width: 200%;
         img {
           width: 100%;
@@ -107,13 +129,15 @@
           line-height: 14px;
           color: #46ac82;
           .current {
+            width: 28px;
             font-size: 24px;
             line-height: 18px;
           }
+
         }
       }
       &.active {
-        display: flex;
+        opacity: 1;
       }
     }
   }
@@ -122,7 +146,7 @@
 .indexSupply {
   position: relative;
   width: 100%;
-  height: 500vh;
+  height: 1000vh;
   background-image: url('../images/index_supply_bg.png');
   background-size: cover;
   background-position: center;
@@ -138,7 +162,7 @@
     padding: 120px 80px 0;
     .wrapper {
       width: 100%;
-      max-width: 1366px;
+      max-width: 1200px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -193,6 +217,12 @@
       display: flex;
       top: 120px;
       right: 0;
+      transform: translateY(50vh);
+      opacity: 0;
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
       > img {
         width: 100%;
       }
@@ -283,7 +313,7 @@
 
 .indexPartner {
   width: 100%;
-  height: 300vh;
+  height: 800vh;
   &__stickyArea {
     position: sticky;
     top: 0;
@@ -297,7 +327,7 @@
     background-size: cover;
     background-position: center;
     padding-top: 120px;
-    padding-left: 80px;
+    padding-left: calc( 50% - 600px );
     .wrapper {
       width: 100%;
       display: flex;
@@ -427,12 +457,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      display: none;
+      display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 80px;
       padding: 80px;
+      opacity: 0;
       .detail {
         display: flex;
         flex-direction: column;
@@ -449,9 +480,10 @@
           align-items: center;
           width: 100%;
           padding-top: 24px;
+          line-height: 24px;
           border-top: #cbcbcb 1px solid;
           .head {
-            width: 50%;
+            width: 240px;
             color: #666666;
           }
           .linkList {
@@ -474,7 +506,7 @@
         }
       }
       &.active {
-        display: flex;
+        opacity: 1;
       }
     }
   }
@@ -549,16 +581,176 @@
     }
   }
   &__map {
+    position: relative;
     width: 50%;
     .map {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      position: relative;
       width: 100%;
       height: 100%;
       img {
-        width: 70%;
+        position: absolute;
+        top: calc( 50% - 400px );
+        left: calc( 50% - 400px );
+        width: 800px;
+        height: 800px;
+        object-fit: contain;
+        object-position: center;
+        opacity: .5;
+      }
+      .mapList {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: calc( 50% - 400px );
+          left: calc( 50% - 400px );
+          width: 800px;
+          height: 800px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800px;
+            height: 800px;
+            object-fit: contain;
+            object-position: center;
+            opacity: 0;
+          }
+          &.active {
+            img {
+              &:first-child {
+                opacity: 1;
+              }
+            }
+          }
+          &.chosen {
+            img {
+              &:last-child {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .infoArea {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .info {
+        position: absolute;
+        display: none;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 8px;
+        width: 80px;
+        height: 15px;
+        line-height: 15px;
+        &:before {
+          content: '';
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #aaa;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 80px;
+          height: 1px;
+          background-color: #aaa;
+        }
+        .head {
+          display: flex;
+          flex-direction: row;
+          font-size: 12px;
+          gap: 4px;
+          color: #aaa;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &.active {
+          display: flex;
+        }
+        &.chosen {
+          &:before {
+            background-color: #111;
+          }
+          &:after {
+            background-color: #111;
+          }
+          .head {
+            color: #111;
+          }
+        }
+        &.right {
+          flex-direction: row;
+          &::after {
+            right: 80px;
+            left: auto
+          }
+        }
+        &.tp {
+          top: 200px;
+          right: 80px;
+          &::after {
+            width: 110px;
+          }
+        }
+        &.ty {
+          top: 200px;
+          left: 200px;
+          &::after {
+            width: 240px;
+          }
+        }
+        &.hc {
+          top: 240px;
+          left: 200px;
+          &::after {
+            width: 220px;
+          }
+        }
+        &.tc {
+          top: 320px;
+          left: 200px;
+          &::after {
+            width: 130px;
+          }
+        }
+        &.tn {
+          top: 540px;
+          right: 80px;
+          &::after {
+            width: 330px;
+          }
+        }
+        &.ks {
+          top: 580px;
+          right: 80px;
+          &::after {
+            width: 330px;
+          }
+        }
+        &.ot {
+          top: 660px;
+          left: 100px;
+          &::after {
+            width: 80px;
+          }
+        }
+        &.ot2 {
+          top: 735px;
+          left: 100px;
+          &::after {
+            width: 140px;
+          }
+        }
       }
     }
   }

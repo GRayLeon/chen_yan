@@ -39,6 +39,12 @@
                 <div class="en">Stories of Success</div>
               </div>
             </li>
+            <li>
+              <div class="head" @click="openNav('./contact.html')">
+                <div class="ch">合作咨詢</div>
+                <div class="en">Contact Us</div>
+              </div>
+            </li>
           </ul>
         </li>
         <li>
@@ -46,6 +52,33 @@
         </li>
         <li>
           <div class="head">品牌與服務總覽</div>
+          <ul>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">小詩琦映像館</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">MAYALULU</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">CAPPI</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">Risle</div>
+              </div>
+            </li>
+            <li>
+              <div class="head" @click="openNav('https://tinyckmkt06188.shoplineapp.com/', '_blank')">
+                <div class="ch">辰妍商業攝影</div>
+              </div>
+            </li>
+          </ul>
         </li>
         <li>
           <div class="head">辰妍圈起來購</div>
@@ -57,48 +90,50 @@
     </div>
     <div class="content">
       <div class="serviceSystem">
-        <div class="head">
-          <h2>Our <span>Service</span></h2>
-        </div>
-        <div class="detail">
-          <div class="image">
-            <img src="./images/service_img.png" alt="">
+        <div class="wrapper">
+          <div class="head">
+            <h2>Our <span>Service</span></h2>
           </div>
-          <div class="text">
-            <div class="title">共築家庭生活生態系</div>
-            <p>
-              辰妍國際的成長策略，早已超越「影像服務業者」的角色。我們以「家庭生活文化平 台」為願景，打造橫跨家庭全生命週期的多品牌生態系。從母嬰影像出發，延伸至女 性、寵物與熟齡市場，辰妍串連「家庭 × 情感 × 記憶」的多層陪伴鏈;並導入 AI、 ERP、CRM 等智能系統，實現跨品牌資料連動與顧客洞察。我們深信，每一次合作 都不只是曝光，而是共同建立一個充滿溫度與創意的家庭生活圈。
-            </p>
-            <ul>
-              <li>
-                <div class="tag">A.</div>
-                <div class="context">
-                  <h3>核心角色</h3>
-                  <p>家庭生活文化平台</p>
-                </div>
-              </li>
-              <li>
-                <div class="tag">B.</div>
-                <div class="context">
-                  <h3>生態市場</h3>
-                  <p>母嬰、女性、寵物、熟齡</p>
-                </div>
-              </li>
-              <li>
-                <div class="tag">C.</div>
-                <div class="context">
-                  <h3>系統支撐</h3>
-                  <p>AI、ERP、CRM</p>
-                </div>
-              </li>
-              <li>
-                <div class="tag">D.</div>
-                <div class="context">
-                  <h3>合作共創</h3>
-                  <p>家庭生命週期需求、情感與記憶累積、共同成長的合作關係</p>
-                </div>
-              </li>
-            </ul>
+          <div class="detail">
+            <div class="image">
+              <img src="./images/service_img.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">共築家庭生活生態系</div>
+              <p>
+                辰妍國際的成長策略，早已超越「影像服務業者」的角色。我們以「家庭生活文化平 台」為願景，打造橫跨家庭全生命週期的多品牌生態系。從母嬰影像出發，延伸至女 性、寵物與熟齡市場，辰妍串連「家庭 × 情感 × 記憶」的多層陪伴鏈;並導入 AI、 ERP、CRM 等智能系統，實現跨品牌資料連動與顧客洞察。我們深信，每一次合作 都不只是曝光，而是共同建立一個充滿溫度與創意的家庭生活圈。
+              </p>
+              <ul>
+                <li>
+                  <div class="tag">A.</div>
+                  <div class="context">
+                    <h3>核心角色</h3>
+                    <p>家庭生活文化平台</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tag">B.</div>
+                  <div class="context">
+                    <h3>生態市場</h3>
+                    <p>母嬰、女性、寵物、熟齡</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tag">C.</div>
+                  <div class="context">
+                    <h3>系統支撐</h3>
+                    <p>AI、ERP、CRM</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tag">D.</div>
+                  <div class="context">
+                    <h3>合作共創</h3>
+                    <p>家庭生命週期需求、情感與記憶累積、共同成長的合作關係</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -121,8 +156,11 @@
                       <div class="number">01</div>
                     </div>
                     <div class="context">
-                      <p></p>
-                      <img src="" alt="">
+                      <p>
+                        結合辰妍信任力與內容美學，<br />
+                        讓您的品牌更貼近家庭族群。
+                      </p>
+                      <img src="./images/service_system_card_01.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -134,8 +172,11 @@
                       <div class="number">02</div>
                     </div>
                     <div class="context">
-                      <p></p>
-                      <img src="" alt="">
+                      <p>
+                        跨區導流與多品牌體驗合作，<br />
+                        擴大市場接觸面。
+                      </p>
+                      <img src="./images/service_system_card_02.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -147,8 +188,11 @@
                       <div class="number">03</div>
                     </div>
                     <div class="context">
-                      <p></p>
-                      <img src="" alt="">
+                      <p>
+                        以精準會員數據協助夥伴<br />
+                        掌握市場趨勢與消費行為。
+                      </p>
+                      <img src="./images/service_system_card_03.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -161,9 +205,10 @@
                     </div>
                     <div class="context">
                       <p>
-                        提供素材、培訓與行銷建議，<br />協助專案快速落地並擴散。
+                        提供素材、培訓與行銷建議，<br />
+                        協助專案快速落地並擴散。
                       </p>
-                      <img src="" alt="">
+                      <img src="./images/service_system_card_04.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -184,20 +229,32 @@
               </div>
               <div class="featureArea">
                 <div class="feature active">
-                  <div class="title">需求對接:</div>
+                  <div class="title">需求對接：</div>
                   <p>了解品牌現況與合作目標，確認最適合的整合方案。</p>
                 </div>
                 <div class="feature">
-                  <div class="title"></div>
-                  <p></p>
+                  <div class="title">共創提案：</div>
+                  <p>由辰妍團隊提供具體合作架構（內容、活動、會員導流等）。</p>
                 </div>
                 <div class="feature">
-                  <div class="title"></div>
-                  <p></p>
+                  <div class="title">專案執行：</div>
+                  <p>整合影像、行銷與社群資源，啟動線上線下聯動。</p>
                 </div>
                 <div class="feature">
-                  <div class="title"></div>
-                  <p></p>
+                  <div class="title">成效追蹤：</div>
+                  <p>以數據報表與會員行為分析，回饋成效並優化後續合作。</p>
+                </div>
+                <div class="feature">
+                  <div class="title">專屬顧問：</div>
+                  <p>每一個合作案皆由辰妍指派專人跟進，確保執行品質與時程。</p>
+                </div>
+                <div class="feature">
+                  <div class="title">行銷共推：</div>
+                  <p>可同步進入辰妍官方社群、會員系統、媒體曝光與CRM導流。</p>
+                </div>
+                <div class="feature">
+                  <div class="title">數據回饋：</div>
+                  <p>提供專案後成效追蹤報告，協助品牌優化下一階段行銷策略。</p>
                 </div>
               </div>
             </div>
@@ -222,13 +279,20 @@
         </div>
       </div>
       <div class="serviceContact">
-        <div class="head">CONTACT US</div>
-        <div class="subtitle">成為辰妍夥伴，讓創意持續發光</div>
-        <div class="button"  @click="openNav('./contact.html')">
-          <div class="text">
-            CONTACT US
+        <div class="bgFlow">
+          <img ref="orb1" src="/images/light_flow_b.png" class="orb orb_b" />
+          <img ref="orb2" src="/images/light_flow_m.png" class="orb orb_m" />
+          <img ref="orb3" src="/images/light_flow_s.png" class="orb orb_s" />
+        </div>
+        <div class="cover">
+          <div class="head">CONTACT US</div>
+          <div class="subtitle">成為辰妍夥伴，讓創意持續發光</div>
+          <div class="button"  @click="openNav('./contact.html')">
+            <div class="text">
+              CONTACT US
+            </div>
+            <img src="./images/button_open.png" alt="">
           </div>
-          <img src="./images/button_open.png" alt="">
         </div>
       </div>
     </div>
@@ -243,7 +307,7 @@
       <div class="secondPart">
         <div class="info">
           <div class="title">辰妍國際文化娛樂股份有限公司</div>
-          <div class="mail">tinyckmkt02@gmail.com</div>
+          <div class="mail"><a href="mailto:tinyckmkt02@gmail.com">客服信箱</a></div>
         </div>
         <ul class="link">
           <li>Instagram</li>
@@ -255,15 +319,13 @@
           <li>
             <div class="title">總公司</div>
             <div class="detail">
-              330 桃園市桃園區三民路一段193號<br />
-              TEL:(03)3310 838
+              330 桃園市桃園區三民路一段193號
             </div>
           </li>
           <li>
             <div class="title">台中辦公室</div>
             <div class="detail">
-              407 台中市西屯區漢口路二段219號3樓<br />
-              TEL:(04)2316 8985
+              407 台中市西屯區漢口路二段219號3樓
             </div>
           </li>
         </ul>
