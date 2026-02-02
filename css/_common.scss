@@ -78,6 +78,10 @@ body {
     }
   }
 
+  .openMenu {
+    display: none;
+  }
+
   .mainNav {
     display: flex;
     flex-direction: row;
@@ -238,6 +242,127 @@ body {
     align-items: flex-start;
     img {
       width: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 0;
+    .header {
+      min-width: 0;
+      padding: 16px;
+      height: 56px;
+      margin-bottom: -56px;
+      z-index: 999;
+
+      > img {
+        top: 16px !important;
+        left: 16px !important;
+        height: 24px;
+      }
+
+      .openMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        span {
+          width: 20px;
+          height: 2px;
+          border-radius: 2px;
+          background-color: white;
+        }
+      }
+
+      .mainNav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+        height: 0;
+        padding: 0 48px;
+        border-radius: 0 0 24px 24px;
+        opacity: 0;
+        overflow: hidden;
+        li > ul {
+          display: flex;
+          position: static;
+          top: 40px;
+          left: -40px;
+          flex-direction: column;
+          li {
+            background: transparent;
+            padding: 12px 24px;
+            &:first-child, &:last-child {
+              padding: 12px 24px;
+            }
+            > .head {
+              .ch {
+                font-size: 12px;
+              }
+              .en {
+                font-size: 12px;
+                color: #408887;
+              }
+            }
+          }
+        }
+        &.open {
+          height: auto;
+          padding: 48px;
+          opacity: 1;
+        }
+      }
+    }
+
+    .footer {
+      flex-direction: column;
+      width: 100%;
+      gap: 24px;
+      padding: 32px 24px;
+      .firstPart {
+        gap: 24px;
+        > img {
+          height: 24px;
+        }
+      }
+      .secondPart {
+        gap: 24px;
+        padding-bottom: 0;
+        .info {
+          .title, .mail, .mail a {
+            font-size: 12px;
+          }
+        }
+        .link {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+      .thirdPart {
+        gap: 24px;
+        padding-bottom: 0;
+        .contact {
+          li {
+            font-size: 12px;
+          }
+        }
+        .subNav {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+      .lastPart {
+        justify-content: flex-start;
+        img {
+          width: 32px;
+        }
+      }
     }
   }
 }

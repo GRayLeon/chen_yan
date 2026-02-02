@@ -1,5 +1,5 @@
 import { createApp, onMounted, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
-import { useNav } from './composables/useNav.js'
+import { useNav, openMenu, closeMenu } from './composables/useNav.js'
 import { watchInView, watchScrollProgress } from './utils/scrollEffect.js'
 import { useOrbitLights } from './composables/useOrbitLights.js'
 
@@ -106,6 +106,6 @@ createApp({
 
     })
 
-    return { openNav, orb1, orb2, orb3 }
+    return { openNav, openMenu, closeMenu, orb1, orb2, orb3 }
   }
 }).mount('#app')

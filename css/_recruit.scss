@@ -471,3 +471,240 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .recruitBanner {
+    &__stickyArea {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        height: auto;
+        padding: 80px 24px;
+      }
+    }
+    .line {
+      display: none;
+    }
+    .featureList {
+      overflow: visible;
+      width: 100%;
+      height: auto;
+      transform: translateY(0) !important;
+      .feature {
+        text-align: center;
+        .title {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .recruitCulture {
+    height: auto;
+    &__stickyArea {
+      position: static;
+      height: auto;
+      padding: 80px 24px;
+      gap: 24px;
+      .wrapper {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+    .picArea {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      height: auto;
+      img {
+        position: static;
+        border-radius: 16px;
+        width: 100% !important;
+        opacity: 1;
+      }
+    }
+    .detail {
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .recruitPhotoWall {
+    gap: 48px;
+    padding: 48px 24px;
+    .section {
+      gap: 24px;
+      .head {
+        font-size: 24px;
+        line-height: 34px;
+        color: #f5edaf;
+      }
+      .picSlide {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &__item {
+          margin: 0;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .recruitWelfare {
+    gap: 48px;
+    padding: 48px 24px;
+    .wrapper {
+      gap: 24px;
+    }
+    .welfareList {
+      gap: 24px 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 50%;
+        &:nth-child(5n) {
+          img {
+            border-right: #000 1px solid;
+          }
+        }
+        &:nth-child(2n) {
+          img {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .recruitVacancies {
+    gap: 16px;
+    padding: 48px 24px;
+    .section {
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+      .head {
+        width: 100%;
+      }
+      .vacanciesList {
+        gap: 16px;
+        li {
+          align-items: center;
+          width:  calc( 100%/2 - (16px)/2);
+          padding: 32px 8px;
+          > img {
+            width: 100px;
+          }
+          .button {
+            padding: 8px 4px 8px 16px;
+            img {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recruitFlow {
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 24px;
+    .detail {
+      p {
+        font-size: 12px;
+        line-height: 24px;
+      }
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        li {
+          flex-direction: row;
+          .step {
+            width: 40px;
+            height: 40px;
+            margin: 12px;
+            gap: 0px;
+            span {
+              &.number {
+                font-size: 14px;
+              }
+            }
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 29px;
+            left: 80px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: white;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 83px;
+            width: 1px;
+            height: 100%;
+            background-color: white;
+          }
+          &:last-child::after {
+            left: 83px;
+            top: 0;
+            width: 1px;
+            height: 50%;
+          }
+          &:first-child::after {
+            right: 0;
+            width: 1px;
+            height: 50%;
+          }
+          .context {
+            text-align: left;
+            font-size: 14px;
+            line-height: 20px;
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recruitJoin {
+    .cover {
+      padding: 24px;
+    }
+    .head {
+      font-size: 48px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+    .button {
+      .text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}

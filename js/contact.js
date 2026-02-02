@@ -1,6 +1,6 @@
 // /js/main.js
 import { createApp, onMounted } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
-import { useNav } from './composables/useNav.js'
+import { useNav, openMenu, closeMenu } from './composables/useNav.js'
 
 createApp({
   setup() {
@@ -12,6 +12,6 @@ createApp({
       
     })
 
-    return { openNav }
+    return { openNav, openMenu, closeMenu }
   }
 }).mount('#app')

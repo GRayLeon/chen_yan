@@ -222,3 +222,70 @@
     width: 36px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contactContent {
+    flex-direction: column;
+    gap: 48px;
+    padding: 80px 24px;
+    > .head {
+      padding-left: 0px;
+      h2 {
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+    .table {
+      gap: 24px;
+      .section {
+        gap: 24px;
+        .title {
+          h3 {
+            font-size: 14px;
+          }
+        }
+        .questions {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .question {
+            padding-left: 16px;
+            .head {
+              font-size: 12px;
+              .text {
+                flex-direction: column;
+                align-items: flex-start;
+                &.required::before {
+                  top: 1.5px;
+                }
+              }
+            }
+            .inputArea {
+              flex-direction: column;
+              padding-left: 24px;
+              input {
+                width: 100%;
+              }
+              .checkboxGroup {
+                .checkboxItem {
+                  input[type=text] {
+                    width: 100px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contactButton {
+    margin: calc( 50% - 100px );
+    .text {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

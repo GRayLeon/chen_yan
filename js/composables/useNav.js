@@ -11,3 +11,13 @@ export function useNav() {
 
   return { openNav }
 }
+
+export function openMenu() {
+  const header = document.querySelector('.mainNav')
+  header.classList.add('open')
+}
+
+export function closeMenu() {
+  const header = document.querySelector('.mainNav')
+  header.classList.remove('open')
+}

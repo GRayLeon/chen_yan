@@ -23,6 +23,7 @@
     line-height: 44px;
   }
 }
+
 .aboutSection {
   display: flex;
   flex-direction: row;
@@ -551,4 +552,268 @@
     line-height: 32px;
     padding-bottom: 160px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutBanner {
+    padding: 80px 24px;
+  }
+
+  .aboutTitle {
+    padding: 24px 0;
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 24px;
+    }
+  }
+
+  .aboutSection {
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 24px;
+    .detail {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .pic_text {
+        gap: 24px;
+        img {
+          width: calc(50% - 12px);
+        }
+        .text {
+          width: calc(50% - 12px);
+        }
+      }
+    }
+  }
+
+  .aboutFeature {
+    flex-direction: column;
+    padding: 42px 0;
+    .head {
+      font-size: 20px;
+      line-height: 36px;
+    }
+    .detail {
+      width: 100%;
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .cardList {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        li {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+      }
+    }
+  }
+
+  .aboutFaith {
+    height: auto;
+    &__stickyArea {
+      position: static;
+      height: auto;
+      padding: 80px 0;
+      overflow: hidden;
+      .wrapper {
+        padding: 0 24px;
+      }
+      .head {
+        h1 {
+          font-size: 48px;
+          line-height: 48px;
+          span {
+            font-size: 24px;
+            line-height: 30px;
+            margin-left: 0;
+          }
+        }
+      }
+      .detail {
+        max-width: 100%;
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+
+      .cardArea {
+        position: static;
+        &__card {
+          position: static;
+          width: 100%;
+          .text {
+            .tag {
+              font-size: 16px;
+            }
+            .title {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .image {
+        position: static;
+        height: auto;
+      }
+    }
+  }
+
+  .aboutMileStone {
+    &__stickyArea {
+      padding-top: 80px;
+      .wrapper {
+        padding: 0 24px;
+      }
+    }
+    .head {
+      .text {
+        gap: 8px;
+        .title {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 20px;
+          br {
+            display: none;
+          }
+        }
+      }
+      .yearArea {
+        padding: 48px 24px 0;
+        .year {
+          font-size: 48px;
+          height: 100px;
+          line-height: 100px;
+        }
+      }
+    }
+    .mileStoneArea {
+      .mileStone {
+        width: 100%;
+        height: 100%;
+        max-height: 240px;
+        flex-direction: column;
+        padding: 24px 0;
+      }
+      .title {
+        display: flex;
+        flex-direction: row;
+        .name {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        img {
+          width: 200px;
+          height: auto;
+        }
+      }
+      .detail {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .aboutBase {
+    padding: 40px 24px;
+    .wrapper {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .cardArea {
+      flex-direction: column;
+      .card {
+        width: 100%;
+        &:last-child {
+          margin-left: 0;
+        }
+        img {
+          width: 100%;
+        }
+        .text {
+          padding: 32px 24px 72px;
+          .cardDetail {
+            .number {
+              font-size: 12px;
+            }
+            .title {
+              font-size: 16px;
+            }
+            .detail {
+              font-size: 12px;
+              line-height: 20px;
+            }
+            .featureList {
+              gap: 8px;
+              li {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutMission {
+    gap: 40px;
+    padding: 40px 24px;
+    .skillTree {
+      width: 100%;
+      align-items: flex-start;
+      padding-left: 20px;
+      ul {
+        margin-top: -32px;
+        gap: 24px;
+        li {
+          width: calc( 100vw - 76px ) !important;
+          padding: 0 0 40px 32px;
+          gap: 8px;
+          &:nth-child(n + 1) {
+            align-items: flex-start;
+            align-self: flex-start;
+          }
+          .title {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+      .logo {
+        width: 40px;
+        left: -20px;
+        margin-left: -20px;
+      }
+    }
+
+    .end {
+      font-size: 14px;
+      line-height: 28px;
+      margin: 0;;
+      br {
+        display: none;
+      }
+    }
+  }
+  
 }

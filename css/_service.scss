@@ -384,3 +384,164 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .serviceSystem {
+    padding: 80px 24px;
+    .wrapper {
+      gap: 48px;
+    }
+    .head {
+      h2 {
+        font-size: 24px;
+      }
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      .text {
+        p {
+          font-size: 12px;
+        }
+        ul {
+          li {
+            .tag {
+              width: 60px;
+              font-size: 16px;
+              line-height: 20px;
+            }
+            .context {
+              width: calc( 100% - 84px );
+              h3 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .serviceCircle {
+    &__stickyArea {
+      padding: 80px 24px;
+      .wrapper {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 0;
+        .head {
+          font-size: 24px;
+        }
+        .detail {
+          width: 100%;
+          > .text {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+        .cardArea {
+          &__card {
+            > .text {
+              padding: 16px;
+              .title {
+                font-size: 14px;
+              }
+              .context {
+                gap: 16px;
+                font-size: 12px;
+                line-height: 20px;
+                img {
+                  width: 80px;
+                  height: 80px;
+                  padding: 8px;
+                  border-radius: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .serviceFlow {
+    &__stickyArea {
+      gap: 24px;
+      padding: 0 24px;
+      .wrapper {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+        .info {
+          width: 100%;
+          height: auto;
+          .head {
+            p {
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+          .featureArea {
+            position: relative;
+            height: 80px;
+            .feature {
+              p {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+        .image {
+          background-size: 300px 300px;
+          width: 348px;
+          height: 348px;
+          &.smallBg {
+            background-size: 75px 75px;
+          }
+          .firstPart, .secondPart {
+            width: 348px;
+            height: 348px;
+          }
+          .imageArea {
+            padding: 24px;
+            border-radius: 24px;
+            img {
+              top: 24px;
+              left: 24px;
+              width: 300px;
+              height: 300px;
+              &:first-child {
+                width: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .serviceContact {
+    .cover {
+      padding: 24px;
+    }
+    .head {
+      font-size: 48px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+    .button {
+      .text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+}
